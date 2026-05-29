@@ -1,0 +1,14 @@
+2026-04-06 00:02:23.071445: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-04-06 00:02:23.215359: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1775426567.892194 3839213 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10854 MB memory:  -> device: 0, name: NVIDIA L40S, pci bus id: 0000:41:00.0, compute capability: 8.9
+2026-04-06 00:02:48.346431: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+/home/jcabrera@caos.uc3m.es/.conda/envs/tf-gpu-2026-jimena/lib/python3.13/site-packages/keras/src/saving/saving_lib.py:797: UserWarning: Skipping variable loading for optimizer 'adam', because it has 66 variables whereas the saved optimizer has 70 variables. 
+  saveable.load_own_variables(weights_store.get(inner_path))
+2026-04-06 00:02:54.807850: I external/local_xla/xla/service/service.cc:163] XLA service 0x70ee40004460 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2026-04-06 00:02:54.807873: I external/local_xla/xla/service/service.cc:171]   StreamExecutor device (0): NVIDIA L40S, Compute Capability 8.9
+2026-04-06 00:02:54.980418: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2026-04-06 00:02:55.752751: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 91700
+I0000 00:00:1775426596.378643 3839282 device_compiler.h:196] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2026-04-06 00:39:25.399273: I tensorflow/core/framework/local_rendezvous.cc:407] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence

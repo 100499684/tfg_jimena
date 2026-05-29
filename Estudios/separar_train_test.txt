@@ -1,0 +1,90 @@
+--------------------------------------- 50/50 --------------------------------------- 
+
+---------- TEST ----------
+CARPETA: safe_drive, LONGITUD: 531952
+CARPETA: reach_side, LONGITUD: 160574
+CARPETA: reach_backseat, LONGITUD: 13612
+CARPETA: radio, LONGITUD: 33134
+CARPETA: drinking, LONGITUD: 44540
+CARPETA: talking_to_passenger, LONGITUD: 23020
+CARPETA: texting_right, LONGITUD: 70764
+CARPETA: phonecall_right, LONGITUD: 171130
+CARPETA: texting_left, LONGITUD: 67104
+CARPETA: phonecall_left, LONGITUD: 189716
+CARPETA: hair_and_makeup, LONGITUD: 59500
+CARPETA: change_gear, LONGITUD: 13750
+TOTAL = 1.378.796 
+
+
+---------- TRAIN ----------
+CARPETA: safe_drive, LONGITUD: 399012
+CARPETA: reach_backseat, LONGITUD: 10388
+CARPETA: reach_side, LONGITUD: 133484
+CARPETA: radio, LONGITUD: 24154
+CARPETA: drinking, LONGITUD: 43734
+CARPETA: talking_to_passenger, LONGITUD: 17506
+CARPETA: change_gear, LONGITUD: 17700
+CARPETA: hair_and_makeup, LONGITUD: 55694
+CARPETA: phonecall_right, LONGITUD: 135314
+CARPETA: texting_right, LONGITUD: 57504
+CARPETA: phonecall_left, LONGITUD: 138724
+CARPETA: texting_left, LONGITUD: 56370
+TOTAL = 1.089.584 
+
+
+
+Total = 2.468.380
+
+
+
+
+--------------------------------------- 80/20 --------------------------------------- 
+Tiempo = 116.4 minutos
+
+
+
+---------- TEST ----------
+CARPETA: safe_drive, LONGITUD: 410308
+CARPETA: phonecall_left, LONGITUD: 149546
+CARPETA: phonecall_right, LONGITUD: 134628
+CARPETA: reach_side, LONGITUD: 126220
+CARPETA: texting_right, LONGITUD: 59072
+CARPETA: texting_left, LONGITUD: 54654
+CARPETA: hair_and_makeup, LONGITUD: 47278
+CARPETA: drinking, LONGITUD: 36866
+CARPETA: radio, LONGITUD: 25552
+CARPETA: talking_to_passenger, LONGITUD: 22350
+CARPETA: change_gear, LONGITUD: 11580
+CARPETA: reach_backseat, LONGITUD: 10610
+TOTAL = 1.088.664 
+
+
+---------- TRAIN ----------
+CARPETA: safe_drive, LONGITUD: 520656
+CARPETA: phonecall_left, LONGITUD: 178894
+CARPETA: phonecall_right, LONGITUD: 171816
+CARPETA: reach_side, LONGITUD: 167838
+CARPETA: texting_right, LONGITUD: 69196
+CARPETA: texting_left, LONGITUD: 68820
+CARPETA: hair_and_makeup, LONGITUD: 67916
+CARPETA: drinking, LONGITUD: 51408
+CARPETA: radio, LONGITUD: 31736
+CARPETA: talking_to_passenger, LONGITUD: 18176
+CARPETA: change_gear, LONGITUD: 19870
+CARPETA: reach_backseat, LONGITUD: 13390
+TOTAL = 1.379.716 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

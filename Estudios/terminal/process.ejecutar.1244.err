@@ -1,0 +1,298 @@
+2026-03-31 00:10:31.560221: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-03-31 00:10:31.949275: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1774908674.774313  145574 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 43695 MB memory:  -> device: 0, name: NVIDIA A40, pci bus id: 0000:01:00.0, compute capability: 8.6
+2026-03-31 00:12:12.013690: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 24 of 1000
+2026-03-31 00:12:31.210220: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 62 of 1000
+2026-03-31 00:12:41.357810: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 86 of 1000
+2026-03-31 00:12:53.468544: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 106 of 1000
+2026-03-31 00:13:11.374701: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 155 of 1000
+2026-03-31 00:13:31.436945: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 202 of 1000
+2026-03-31 00:13:44.581911: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 218 of 1000
+2026-03-31 00:14:01.308532: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 255 of 1000
+2026-03-31 00:14:11.756927: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 273 of 1000
+2026-03-31 00:14:31.268672: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 318 of 1000
+2026-03-31 00:14:41.429746: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 345 of 1000
+2026-03-31 00:15:01.351670: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 388 of 1000
+2026-03-31 00:15:21.323642: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 433 of 1000
+2026-03-31 00:15:35.120422: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 440 of 1000
+2026-03-31 00:15:51.309022: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 482 of 1000
+2026-03-31 00:16:01.571197: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 502 of 1000
+2026-03-31 00:16:11.662209: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 524 of 1000
+2026-03-31 00:16:31.292317: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 571 of 1000
+2026-03-31 00:16:51.548353: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 620 of 1000
+2026-03-31 00:17:11.584435: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 666 of 1000
+2026-03-31 00:17:21.810748: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 691 of 1000
+2026-03-31 00:17:41.436256: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 741 of 1000
+2026-03-31 00:18:01.477204: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 790 of 1000
+2026-03-31 00:18:21.399916: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 836 of 1000
+2026-03-31 00:18:31.406560: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 859 of 1000
+2026-03-31 00:19:10.192912: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 884 of 1000
+2026-03-31 00:19:21.409547: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 912 of 1000
+2026-03-31 00:19:41.230064: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 959 of 1000
+2026-03-31 00:19:51.306904: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 980 of 1000
+2026-03-31 00:19:57.371038: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 00:19:57.396020: I external/local_xla/xla/service/service.cc:163] XLA service 0x7ad8ec00f2f0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2026-03-31 00:19:57.396052: I external/local_xla/xla/service/service.cc:171]   StreamExecutor device (0): NVIDIA A40, Compute Capability 8.6
+2026-03-31 00:19:57.468468: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2026-03-31 00:19:58.088384: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 91700
+I0000 00:00:1774909217.678236  145597 device_compiler.h:196] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2026-03-31 03:02:38.599946: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 38 of 1000
+2026-03-31 03:02:58.574562: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 112 of 1000
+2026-03-31 03:03:18.523109: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 178 of 1000
+2026-03-31 03:03:28.545023: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 212 of 1000
+2026-03-31 03:03:48.612120: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 281 of 1000
+2026-03-31 03:04:08.623169: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 353 of 1000
+2026-03-31 03:04:18.770483: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 390 of 1000
+2026-03-31 03:04:38.634834: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 462 of 1000
+2026-03-31 03:04:48.657897: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 498 of 1000
+2026-03-31 03:05:08.604525: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 571 of 1000
+2026-03-31 03:05:18.613314: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 607 of 1000
+2026-03-31 03:05:28.623874: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 643 of 1000
+2026-03-31 03:05:38.663446: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 680 of 1000
+2026-03-31 03:05:58.557746: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 753 of 1000
+2026-03-31 03:06:08.630885: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 789 of 1000
+2026-03-31 03:06:28.732693: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 863 of 1000
+2026-03-31 03:06:38.736138: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 899 of 1000
+2026-03-31 03:06:58.711465: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 970 of 1000
+2026-03-31 03:07:07.464208: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 04:42:09.143086: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 36 of 1000
+2026-03-31 04:42:29.134277: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 110 of 1000
+2026-03-31 04:42:39.274188: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 145 of 1000
+2026-03-31 04:42:59.055444: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 219 of 1000
+2026-03-31 04:43:09.146519: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 253 of 1000
+2026-03-31 04:43:19.284795: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 291 of 1000
+2026-03-31 04:43:39.025991: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 362 of 1000
+2026-03-31 04:43:49.164984: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 396 of 1000
+2026-03-31 04:44:08.969753: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 468 of 1000
+2026-03-31 04:44:19.167112: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 505 of 1000
+2026-03-31 04:44:29.168787: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 543 of 1000
+2026-03-31 04:44:49.221744: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 615 of 1000
+2026-03-31 04:45:09.128539: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 687 of 1000
+2026-03-31 04:45:19.169088: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 720 of 1000
+2026-03-31 04:45:29.225078: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 757 of 1000
+2026-03-31 04:45:39.281520: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 793 of 1000
+2026-03-31 04:45:59.066587: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 866 of 1000
+2026-03-31 04:46:19.139487: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 938 of 1000
+2026-03-31 04:46:35.453464: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 06:22:35.603012: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 37 of 1000
+2026-03-31 06:22:55.499669: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 110 of 1000
+2026-03-31 06:23:05.581618: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 143 of 1000
+2026-03-31 06:23:25.448958: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 214 of 1000
+2026-03-31 06:23:35.624585: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 251 of 1000
+2026-03-31 06:23:55.482997: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 321 of 1000
+2026-03-31 06:24:15.427488: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 393 of 1000
+2026-03-31 06:24:25.656335: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 428 of 1000
+2026-03-31 06:24:45.704712: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 497 of 1000
+2026-03-31 06:25:05.436391: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 566 of 1000
+2026-03-31 06:25:15.553022: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 603 of 1000
+2026-03-31 06:25:35.521996: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 676 of 1000
+2026-03-31 06:25:55.454546: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 748 of 1000
+2026-03-31 06:26:05.641335: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 784 of 1000
+2026-03-31 06:26:25.533532: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 855 of 1000
+2026-03-31 06:26:35.636628: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 893 of 1000
+2026-03-31 06:26:55.458218: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 965 of 1000
+2026-03-31 06:27:05.290996: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 08:03:07.394174: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 34 of 1000
+2026-03-31 08:03:17.421240: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 68 of 1000
+2026-03-31 08:03:27.441776: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 105 of 1000
+2026-03-31 08:03:37.551359: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 135 of 1000
+2026-03-31 08:03:57.370194: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 207 of 1000
+2026-03-31 08:04:07.568299: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 241 of 1000
+2026-03-31 08:04:17.580848: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 278 of 1000
+2026-03-31 08:04:37.447831: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 350 of 1000
+2026-03-31 08:04:47.499016: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 386 of 1000
+2026-03-31 08:05:07.509031: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 460 of 1000
+2026-03-31 08:05:27.344931: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 528 of 1000
+2026-03-31 08:05:37.387080: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 563 of 1000
+2026-03-31 08:05:57.494810: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 636 of 1000
+2026-03-31 08:06:07.530839: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 671 of 1000
+2026-03-31 08:06:17.533648: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 707 of 1000
+2026-03-31 08:06:37.469336: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 782 of 1000
+2026-03-31 08:06:57.483749: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 855 of 1000
+2026-03-31 08:07:17.320003: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 924 of 1000
+2026-03-31 08:07:27.489893: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 962 of 1000
+2026-03-31 08:07:37.499463: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 998 of 1000
+2026-03-31 08:07:37.994690: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 09:44:39.605662: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 61 of 1000
+2026-03-31 09:44:59.686915: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 134 of 1000
+2026-03-31 09:45:19.645895: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 206 of 1000
+2026-03-31 09:45:29.710662: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 239 of 1000
+2026-03-31 09:45:39.730338: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 276 of 1000
+2026-03-31 09:45:59.613357: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 346 of 1000
+2026-03-31 09:46:19.785510: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 418 of 1000
+2026-03-31 09:46:39.609820: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 493 of 1000
+2026-03-31 09:46:59.544463: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 567 of 1000
+2026-03-31 09:47:19.573061: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 637 of 1000
+2026-03-31 09:47:39.508224: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 709 of 1000
+2026-03-31 09:47:49.526558: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 743 of 1000
+2026-03-31 09:47:59.624486: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 782 of 1000
+2026-03-31 09:48:09.662231: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 814 of 1000
+2026-03-31 09:48:19.680062: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 851 of 1000
+2026-03-31 09:48:39.612882: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 924 of 1000
+2026-03-31 09:48:59.652056: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 999 of 1000
+2026-03-31 09:48:59.868198: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 11:24:45.256032: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 38 of 1000
+2026-03-31 11:25:05.367982: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 109 of 1000
+2026-03-31 11:25:25.089499: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 175 of 1000
+2026-03-31 11:25:35.172048: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 213 of 1000
+2026-03-31 11:25:55.307935: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 283 of 1000
+2026-03-31 11:26:15.183721: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 345 of 1000
+2026-03-31 11:26:25.225037: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 381 of 1000
+2026-03-31 11:26:45.294218: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 451 of 1000
+2026-03-31 11:27:05.423332: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 519 of 1000
+2026-03-31 11:27:25.329715: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 576 of 1000
+2026-03-31 11:27:45.190332: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 640 of 1000
+2026-03-31 11:27:55.326150: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 674 of 1000
+2026-03-31 11:28:15.205240: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 742 of 1000
+2026-03-31 11:28:35.170607: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 811 of 1000
+2026-03-31 11:28:45.331419: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 842 of 1000
+2026-03-31 11:29:05.164168: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 898 of 1000
+2026-03-31 11:29:25.080879: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 964 of 1000
+2026-03-31 11:29:35.324394: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 13:16:32.482090: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 33 of 1000
+2026-03-31 13:16:52.514867: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 99 of 1000
+2026-03-31 13:17:12.210446: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 165 of 1000
+2026-03-31 13:17:22.477988: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 199 of 1000
+2026-03-31 13:17:42.280716: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 265 of 1000
+2026-03-31 13:17:52.399200: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 297 of 1000
+2026-03-31 13:18:02.413217: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 330 of 1000
+2026-03-31 13:18:22.271862: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 394 of 1000
+2026-03-31 13:18:32.526614: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 423 of 1000
+2026-03-31 13:18:42.530298: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 458 of 1000
+2026-03-31 13:19:02.514330: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 522 of 1000
+2026-03-31 13:19:12.634101: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 553 of 1000
+2026-03-31 13:19:32.602603: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 619 of 1000
+2026-03-31 13:19:52.417364: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 684 of 1000
+2026-03-31 13:20:02.518621: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 718 of 1000
+2026-03-31 13:20:22.485933: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 784 of 1000
+2026-03-31 13:20:32.698715: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 814 of 1000
+2026-03-31 13:20:52.336322: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 878 of 1000
+2026-03-31 13:21:02.392401: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 911 of 1000
+2026-03-31 13:21:12.418736: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 943 of 1000
+2026-03-31 13:21:29.356377: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 14:55:20.107513: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 54 of 1000
+2026-03-31 14:55:30.172646: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 117 of 1000
+2026-03-31 14:55:50.189901: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 246 of 1000
+2026-03-31 14:56:00.329904: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 311 of 1000
+2026-03-31 14:56:20.161414: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 441 of 1000
+2026-03-31 14:56:30.168790: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 503 of 1000
+2026-03-31 14:56:40.190505: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 569 of 1000
+2026-03-31 14:56:50.249996: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 636 of 1000
+2026-03-31 14:57:10.130694: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 769 of 1000
+2026-03-31 14:57:30.093692: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 899 of 1000
+2026-03-31 14:57:40.165489: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 967 of 1000
+2026-03-31 14:57:44.824461: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 15:50:00.118290: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 64 of 1000
+2026-03-31 15:50:20.153405: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 190 of 1000
+2026-03-31 15:50:40.240109: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 317 of 1000
+2026-03-31 15:51:00.062495: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 448 of 1000
+2026-03-31 15:51:10.124110: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 502 of 1000
+2026-03-31 15:51:20.230325: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 561 of 1000
+2026-03-31 15:51:40.138711: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 687 of 1000
+2026-03-31 15:52:00.087846: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 823 of 1000
+2026-03-31 15:52:10.121187: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 886 of 1000
+2026-03-31 15:52:27.163644: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 16:46:13.482447: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 60 of 1000
+2026-03-31 16:46:33.570097: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 199 of 1000
+2026-03-31 16:46:53.393237: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 335 of 1000
+2026-03-31 16:47:03.426738: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 404 of 1000
+2026-03-31 16:47:13.431497: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 474 of 1000
+2026-03-31 16:47:33.525377: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 611 of 1000
+2026-03-31 16:47:53.458843: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 746 of 1000
+2026-03-31 16:48:13.451163: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 884 of 1000
+2026-03-31 16:48:30.851658: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 17:38:49.935047: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 62 of 1000
+2026-03-31 17:39:09.765148: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 198 of 1000
+2026-03-31 17:39:29.786911: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 331 of 1000
+2026-03-31 17:39:49.799172: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 466 of 1000
+2026-03-31 17:39:59.850391: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 539 of 1000
+2026-03-31 17:40:19.848274: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 671 of 1000
+2026-03-31 17:40:39.874436: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 811 of 1000
+2026-03-31 17:40:49.901479: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 880 of 1000
+2026-03-31 17:41:07.358910: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 18:31:06.479131: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 59 of 1000
+2026-03-31 18:31:26.284981: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 195 of 1000
+2026-03-31 18:31:36.299830: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 265 of 1000
+2026-03-31 18:31:46.354738: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 336 of 1000
+2026-03-31 18:32:06.336505: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 478 of 1000
+2026-03-31 18:32:16.349726: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 544 of 1000
+2026-03-31 18:32:36.255258: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 676 of 1000
+2026-03-31 18:32:46.490466: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 745 of 1000
+2026-03-31 18:33:06.289069: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 883 of 1000
+2026-03-31 18:33:16.444462: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 954 of 1000
+2026-03-31 18:33:23.175007: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 19:25:24.107211: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 61 of 1000
+2026-03-31 19:25:44.066821: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 199 of 1000
+2026-03-31 19:25:54.274608: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 270 of 1000
+2026-03-31 19:26:14.112794: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 397 of 1000
+2026-03-31 19:26:24.201286: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 468 of 1000
+2026-03-31 19:26:44.154830: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 612 of 1000
+2026-03-31 19:27:04.153065: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 744 of 1000
+2026-03-31 19:27:24.082089: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 878 of 1000
+2026-03-31 19:27:41.152923: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 20:18:39.074623: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 53 of 1000
+2026-03-31 20:18:49.076854: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 120 of 1000
+2026-03-31 20:19:09.185770: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 247 of 1000
+2026-03-31 20:19:29.093885: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 381 of 1000
+2026-03-31 20:19:49.108551: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 508 of 1000
+2026-03-31 20:20:09.172765: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 638 of 1000
+2026-03-31 20:20:29.102139: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 771 of 1000
+2026-03-31 20:20:49.169989: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 901 of 1000
+2026-03-31 20:21:03.645043: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 21:12:28.807168: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 61 of 1000
+2026-03-31 21:12:38.835163: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 127 of 1000
+2026-03-31 21:12:58.761041: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 262 of 1000
+2026-03-31 21:13:08.825773: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 328 of 1000
+2026-03-31 21:13:18.844175: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 396 of 1000
+2026-03-31 21:13:28.877239: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 466 of 1000
+2026-03-31 21:13:48.835819: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 598 of 1000
+2026-03-31 21:14:08.832959: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 732 of 1000
+2026-03-31 21:14:28.837908: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 874 of 1000
+2026-03-31 21:14:38.844229: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 935 of 1000
+2026-03-31 21:14:47.958903: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-03-31 22:05:15.162987: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 56 of 1000
+2026-03-31 22:05:25.169520: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 110 of 1000
+2026-03-31 22:05:45.280083: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 210 of 1000
+2026-03-31 22:06:05.218472: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 304 of 1000
+2026-03-31 22:06:25.105148: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 407 of 1000
+2026-03-31 22:06:35.607009: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 448 of 1000
+2026-03-31 22:06:55.591765: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 535 of 1000
+2026-03-31 22:07:15.116780: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 610 of 1000
+2026-03-31 22:07:35.086129: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 687 of 1000
+2026-03-31 22:07:45.092787: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 719 of 1000
+2026-03-31 22:08:05.237478: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 792 of 1000
+2026-03-31 22:08:25.154240: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 867 of 1000
+2026-03-31 22:08:35.208670: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 904 of 1000
+2026-03-31 22:08:55.462720: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:21: Filling up shuffle buffer (this may take a while): 978 of 1000
+2026-03-31 22:09:00.016005: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+Traceback (most recent call last):
+  File "/home/jcabrera@caos.uc3m.es/tfg-jimena/MobileNetV2_model.py", line 253, in <module>
+    )
+    
+  File "/home/jcabrera@caos.uc3m.es/.conda/envs/tf-gpu-2026-jimena/lib/python3.13/site-packages/keras/src/saving/saving_api.py", line 189, in load_model
+    return saving_lib.load_model(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        filepath,
+        ^^^^^^^^^
+    ...<2 lines>...
+        safe_mode=safe_mode,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/jcabrera@caos.uc3m.es/.conda/envs/tf-gpu-2026-jimena/lib/python3.13/site-packages/keras/src/saving/saving_lib.py", line 365, in load_model
+    return _load_model_from_fileobj(
+        f, custom_objects, compile, safe_mode
+    )
+  File "/home/jcabrera@caos.uc3m.es/.conda/envs/tf-gpu-2026-jimena/lib/python3.13/site-packages/keras/src/saving/saving_lib.py", line 440, in _load_model_from_fileobj
+    config_json = f.read()
+  File "/home/jcabrera@caos.uc3m.es/.conda/envs/tf-gpu-2026-jimena/lib/python3.13/zipfile/__init__.py", line 1017, in read
+    buf += self._read1(self.MAX_N)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/jcabrera@caos.uc3m.es/.conda/envs/tf-gpu-2026-jimena/lib/python3.13/zipfile/__init__.py", line 1121, in _read1
+    self._update_crc(data)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/jcabrera@caos.uc3m.es/.conda/envs/tf-gpu-2026-jimena/lib/python3.13/zipfile/__init__.py", line 1049, in _update_crc
+    raise BadZipFile("Bad CRC-32 for file %r" % self.name)
+zipfile.BadZipFile: Bad CRC-32 for file 'config.json'

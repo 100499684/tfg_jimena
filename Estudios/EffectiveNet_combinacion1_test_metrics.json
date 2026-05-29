@@ -1,0 +1,8 @@
+{
+    "test_accuracy": 0.8124887943267822,
+    "test_loss": 0.870437502861023,
+    "total_samples": 1088671,
+    "correct_predictions": 884533,
+    "mean_confidence": 0.9246999025344849,
+    "num_classes": 11
+}

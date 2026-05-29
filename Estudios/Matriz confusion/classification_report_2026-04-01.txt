@@ -1,0 +1,18 @@
+                      precision    recall  f1-score   support
+
+         change_gear       0.19      0.20      0.20     11580
+            drinking       0.64      0.79      0.71     36868
+     hair_and_makeup       0.56      0.72      0.63     47278
+      phonecall_left       0.84      0.72      0.78    149546
+     phonecall_right       0.95      0.76      0.85    134628
+               radio       0.75      0.51      0.61     25552
+      reach_backseat       0.29      0.50      0.37     10610
+          reach_side       0.48      0.66      0.55    126220
+          safe_drive       0.70      0.83      0.76    410308
+talking_to_passenger       0.72      0.35      0.47     22350
+        texting_left       0.64      0.28      0.38     54654
+       texting_right       0.76      0.07      0.13     59072
+
+            accuracy                           0.68   1088666
+           macro avg       0.63      0.53      0.54   1088666
+        weighted avg       0.71      0.68      0.67   1088666

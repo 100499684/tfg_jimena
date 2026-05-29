@@ -1,0 +1,31 @@
+# datasets
+Training/
+Testing/
+Training_sinteticas/
+
+# caches
+*.data-00000-of-00001
+*.index
+train_cache*
+val_cache*
+
+# model weights
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.keras
+ip_adapter_weights/
+
+# images
+*.jpg
+*.jpeg
+*.png
+
+# python
+__pycache__/
+.ipynb_checkpoints/
+
+# misc
+*.out
+EOF

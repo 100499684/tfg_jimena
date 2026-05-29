@@ -1,0 +1,18 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776409944.539909  570492 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1776409945.057581  570492 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776409949.981357  570492 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+W0000 00:00:1776409955.568828  570522 cuda_executor.cc:1755] Failed to determine cuDNN version (Note that this is expected if the application doesn't link the cuDNN plugin): INTERNAL: cuDNN error: CUDNN_STATUS_INTERNAL_ERROR
+W0000 00:00:1776409956.131065  570492 gpu_device.cc:2365] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+I0000 00:00:1776410021.929174  570575 shuffle_dataset_op.cc:453] ShuffleDatasetV3:14: Filling up shuffle buffer (this may take a while): 341 of 1000
+I0000 00:00:1776410041.913465  570575 shuffle_dataset_op.cc:453] ShuffleDatasetV3:14: Filling up shuffle buffer (this may take a while): 985 of 1000
+I0000 00:00:1776410043.482650  570575 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+I0000 00:00:1776444403.237813  573056 shuffle_dataset_op.cc:453] ShuffleDatasetV3:14: Filling up shuffle buffer (this may take a while): 446 of 1000
+I0000 00:00:1776444413.246618  573056 shuffle_dataset_op.cc:453] ShuffleDatasetV3:14: Filling up shuffle buffer (this may take a while): 898 of 1000
+I0000 00:00:1776444415.522535  573056 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+I0000 00:00:1776480514.658780  575395 shuffle_dataset_op.cc:453] ShuffleDatasetV3:14: Filling up shuffle buffer (this may take a while): 504 of 1000
+I0000 00:00:1776480524.623617  575395 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+slurmstepd-afrodita: error: *** JOB 1878 ON afrodita CANCELLED AT 2026-04-18T09:21:39 ***

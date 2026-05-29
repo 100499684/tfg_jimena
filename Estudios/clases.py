@@ -1,0 +1,56 @@
+import csv
+from pathlib import Path\n
+from collections import Counter
+
+# ============================================
+# CAMBIA ESTA RUTA A DONDE TENGAS EL DMD
+# ============================================
+DMD_PATH = "../Training"  # <-- CAMBIA ESTO
+    # Buscar todos los CSV
+    "print(\"🔍 Buscando archivos CSV...\")\n",
+    "csv_files = list(Path(DMD_PATH).rglob(\"*.csv\"))\n",
+    "print(f\"✅ Encontrados {len(csv_files)} archivos CSV\\n\")\n",
+    "\n",
+    "# Contenedores para resultados\n",
+    "all_actions = set()\n",
+    "action_counts = Counter()\n",
+    "\n",
+    "# Analizar cada CSV\n",
+    "print(\"📊 Analizando archivos...\")\n",
+    "for i, csv_file in enumerate(csv_files, 1):\n",
+    "    if i % 10 == 0:\n",
+    "        print(f\"  Procesados {i}/{len(csv_files)}...\")\n",
+    "    \n",
+    "    try:\n",
+    "        with open(csv_file, 'r') as f:\n",
+    "            reader = csv.DictReader(f)\n",
+    "            \n",
+    "            # Leer todas las filas y contar acciones\n",
+    "            for row in reader:\n",
+    "                if 'action' in row and row['action']:\n",
+    "                    action = row['action'].strip()\n",
+    "                    if action:  # Ignorar vacíos\n",
+    "                        all_actions.add(action)\n",
+    "                        action_counts[action] += 1\n",
+    "    except Exception as e:\n",
+    "        pass\n",
+    "\n",
+    "# Mostrar resultados\n",
+    "print(f\"\\n{'='*70}\")\n",
+    "print(f\"ACCIONES ENCONTRADAS ({len(all_actions)}):\")\n",
+    "print(f\"{'='*70}\\n\")\n",
+    "\n",
+    "sorted_actions = sorted(action_counts.items(), key=lambda x: x[1], reverse=True)\n",
+    "\n",
+    "for i, (action, count) in enumerate(sorted_actions, 1):\n",
+    "    print(f\"{i:3d}. {action:50s} ({count:8d} frames)\")\n",
+    "\n",
+    "# Guardar en archivo\n",
+    "with open('acciones_DMD.txt', 'w') as f:\n",
+    "    f.write(f\"ACCIONES DEL DATASET DMD ({len(all_actions)} únicas)\\n\")\n",
+    "    f.write(\"=\"*70 + \"\\n\\n\")\n",
+    "    for i, (action, count) in enumerate(sorted_actions, 1):\n",
+    "        f.write(f\"{i:3d}. {action:50s} ({count:8d} frames)\\n\")\n",
+    "\n",
+    "print(f\"\\n💾 Resultados guardados en: acciones_DMD.txt\")\n",
+    "print(\"✅ ¡Completado!\")"

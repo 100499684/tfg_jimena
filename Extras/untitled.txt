@@ -1,0 +1,24 @@
+
+
+
+
+
+# Comprobamos la longitud de ambas carpetas (train y test)
+size = 0
+
+print("-"*10, "TEST", "-"*10)
+for i in os.listdir(ruta_test):
+    r = os.path.join(ruta_test, i)
+    long = len(os.listdir(r))
+    print(f"CARPETA: {i}, LONGITUD: {long}")
+    size += long
+print(f"TOTAL = {size} \n\n")
+
+size = 0
+print("-"*10, "TRAIN", "-"*10)
+for i in os.listdir(ruta_train):
+    r = os.path.join(ruta_train, i)
+    long = len(os.listdir(r))
+    print(f"CARPETA: {i}, LONGITUD: {long}")
+    size += long
+print(f"TOTAL = {size} \n\n")

@@ -1,0 +1,10 @@
+Modelo: MobileNetV2_rapido
+Image size = 128x128
+Batch size = 64
+Epochs fase 1 = 5
+Epochs fase 2 = 10
+Tiempo fase 1 = 45.52 min
+Tiempo fase 2 = 584.77 min
+
+Mejor val_accuracy fase 1: 0.8406
+Mejor val_accuracy fase 2: 0.9761

@@ -1,0 +1,105 @@
+
+-------------------------------- Deploy 1 --------------------------------
+time executing: 3 days, 3 nights
+Train/Test = 50/50
+
+Epoch 1/10
+68099/68099 - 21937s - 322ms/step - accuracy: 0.6555 - loss: 1.0467 - val_accuracy: 0.6566 - val_loss: 1.0871
+Epoch 2/10
+68099/68099 - 24786s - 364ms/step - accuracy: 0.6818 - loss: 0.9688 - val_accuracy: 0.6596 - val_loss: 1.0884
+Epoch 3/10
+68099/68099 - 26720s - 392ms/step - accuracy: 0.6877 - loss: 0.9529 - val_accuracy: 0.6511 - val_loss: 1.0945
+Epoch 4/10
+68099/68099 - 24214s - 356ms/step - accuracy: 0.6907 - loss: 0.9474 - val_accuracy: 0.6593 - val_loss: 1.0786
+Epoch 5/10
+68099/68099 - 22548s - 331ms/step - accuracy: 0.6923 - loss: 0.9436 - val_accuracy: 0.6507 - val_loss: 1.1225
+Epoch 6/10
+68099/68099 - 22443s - 330ms/step - accuracy: 0.6941 - loss: 0.9407 - val_accuracy: 0.6612 - val_loss: 1.0718
+Epoch 7/10
+68099/68099 - 24215s - 356ms/step - accuracy: 0.6949 - loss: 0.9384 - val_accuracy: 0.6564 - val_loss: 1.1022
+Epoch 8/10
+68099/68099 - 23480s - 345ms/step - accuracy: 0.6966 - loss: 0.9362 - val_accuracy: 0.6614 - val_loss: 1.0736
+Epoch 9/10
+68099/68099 - 22276s - 327ms/step - accuracy: 0.6969 - loss: 0.9359 - val_accuracy: 0.6593 - val_loss: 1.0710
+Epoch 10/10
+68099/68099 - 21855s - 321ms/step - accuracy: 0.6975 - loss: 0.9345 - val_accuracy: 0.6657 - val_loss: 1.0674
+
+
+
+
+-------------------------------- Deploy 2 --------------------------------
+Image size = 160x160
+Batch size = 64
+Epochs = 10
+Time executing = 25557.984142780304
+Train accuracy: 0.9080
+Train loss: 0.2748
+Val accuracy: 0.9381
+Val loss: 0.1887
+
+🏆 MEJORES VALORES:
+Best val accuracy: 0.9381 (epoch 10)
+
+
+
+
+-------------------------------- Deploy 3 --------------------------------Image size = 160x160
+Batch size = 64
+Epochs = 20
+Time executing = 56396.44193506241
+Train accuracy: 0.9215
+Train loss: 0.2325
+Val accuracy: 0.9479
+Val loss: 0.1595
+
+🏆 MEJORES VALORES:
+Best val accuracy: 0.9493 (epoch 19)
+
+
+Epoch 1/20
+Epoch 1: val_accuracy improved from None to 0.89953, saving model to mejor_modelo_mobilenetv2.keras
+Epoch 1: finished saving model to mejor_modelo_mobilenetv2.keras
+19403/19403 - 2607s - 134ms/step - accuracy: 0.8261 - loss: 0.5338 - val_accuracy: 0.8995 - val_loss: 0.3088 - learning_rate: 0.0010
+
+Epoch 2/20
+Epoch 2: finished saving model to mejor_modelo_mobilenetv2.keras
+19403/19403 - 2608s - 134ms/step - accuracy: 0.8757 - loss: 0.3768 - val_accuracy: 0.9205 - val_loss: 0.2478 - learning_rate: 0.0010
+
+Epoch 3/20
+Epoch 3: val_accuracy improved from 0.92046 to 0.92571, saving model to mejor_modelo_mobilenetv2.keras
+Epoch 3: finished saving model to mejor_modelo_mobilenetv2.keras
+19403/19403 - 2833s - 146ms/step - accuracy: 0.8883 - loss: 0.3366 - val_accuracy: 0.9257 - val_loss: 0.2324 - learning_rate: 0.0010
+
+Epoch 4/20
+Epoch 4: val_accuracy improved from 0.92571 to 0.93116, saving model to mejor_modelo_mobilenetv2.keras
+Epoch 4: finished saving model to mejor_modelo_mobilenetv2.keras
+19403/19403 - 3107s - 160ms/step - accuracy: 0.8959 - loss: 0.3135 - val_accuracy: 0.9312 - val_loss: 0.2157 - learning_rate: 0.0010
+
+Epoch 5/20
+Epoch 5: val_accuracy improved from 0.93116 to 0.93375, saving model to mejor_modelo_mobilenetv2.keras
+Epoch 5: finished saving model to mejor_modelo_mobilenetv2.keras
+19403/19403 - 3147s - 162ms/step - accuracy: 0.9010 - loss: 0.2980 - val_accuracy: 0.9338 - val_loss: 0.2061 - learning_rate: 0.0010
+
+Epoch 6/20
+Epoch 6: val_accuracy improved from 0.93375 to 0.93628, saving model to mejor_modelo_mobilenetv2.keras
+Epoch 6: finished saving model to mejor_modelo_mobilenetv2.keras
+19403/19403 - 3042s - 157ms/step - accuracy: 0.9039 - loss: 0.2872 - val_accuracy: 0.9363 - val_loss: 0.1981 - learning_rate: 0.0010
+
+Epoch 7/20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

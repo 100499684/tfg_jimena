@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/jcabrera@caos.uc3m.es/tfg-jimena/Extras/eliminar_fotos.py", line 10, in <module>
+    if archivo.lower().endswith(extensiones) and "cara" in archivo.lower():
+       ^^^^^^^
+NameError: name 'archivo' is not defined

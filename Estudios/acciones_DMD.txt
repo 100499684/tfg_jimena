@@ -1,0 +1,15 @@
+ACCIONES DEL DATASET DMD (12 únicas)
+======================================================================
+
+  1. safe_drive                                         (  495833 frames)
+  2. phonecall_left                                     (  171221 frames)
+  3. phonecall_right                                    (  157866 frames)
+  4. reach_side                                         (  153713 frames)
+  5. texting_right                                      (   65681 frames)
+  6. texting_left                                       (   64240 frames)
+  7. hair_and_makeup                                    (   59712 frames)
+  8. drinking                                           (   47357 frames)
+  9. radio                                              (   32848 frames)
+ 10. talking_to_passenger                               (   22920 frames)
+ 11. change_gear                                        (   15884 frames)
+ 12. reach_backseat                                     (   12000 frames)

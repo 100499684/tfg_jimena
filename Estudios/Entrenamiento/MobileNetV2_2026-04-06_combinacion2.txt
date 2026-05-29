@@ -1,0 +1,44 @@
+Modelo: MobileNetV2
+Image size = 224x224
+Batch size = 128
+Epochs fase 1 = 20
+Epochs fase 2 = 10
+Tiempo fase 1 = 1167.02 min
+Tiempo fase 2 = 653.72 min
+
+Mejor val_accuracy fase 1: 0.9315
+Mejor val_accuracy fase 2: 0.9904
+
+📊 HISTORIAL FASE 1:
+Epoch 1: acc=0.7865, val_acc=0.8955, loss=0.6157, val_loss=0.3400
+Epoch 2: acc=0.8301, val_acc=0.9105, loss=0.4911, val_loss=0.3020
+Epoch 3: acc=0.8391, val_acc=0.9073, loss=0.4652, val_loss=0.2911
+Epoch 4: acc=0.8443, val_acc=0.9073, loss=0.4513, val_loss=0.2809
+Epoch 5: acc=0.8479, val_acc=0.9179, loss=0.4425, val_loss=0.2690
+Epoch 6: acc=0.8503, val_acc=0.9195, loss=0.4361, val_loss=0.2602
+Epoch 7: acc=0.8517, val_acc=0.9232, loss=0.4315, val_loss=0.2621
+Epoch 8: acc=0.8539, val_acc=0.9224, loss=0.4256, val_loss=0.2541
+Epoch 9: acc=0.8551, val_acc=0.9228, loss=0.4228, val_loss=0.2543
+Epoch 10: acc=0.8561, val_acc=0.9169, loss=0.4197, val_loss=0.2566
+Epoch 11: acc=0.8570, val_acc=0.9199, loss=0.4177, val_loss=0.2481
+Epoch 12: acc=0.8580, val_acc=0.9252, loss=0.4153, val_loss=0.2460
+Epoch 13: acc=0.8585, val_acc=0.9251, loss=0.4140, val_loss=0.2463
+Epoch 14: acc=0.8596, val_acc=0.9258, loss=0.4118, val_loss=0.2391
+Epoch 15: acc=0.8597, val_acc=0.9257, loss=0.4109, val_loss=0.2379
+Epoch 16: acc=0.8598, val_acc=0.9259, loss=0.4088, val_loss=0.2389
+Epoch 17: acc=0.8608, val_acc=0.9227, loss=0.4079, val_loss=0.2419
+Epoch 18: acc=0.8613, val_acc=0.9240, loss=0.4072, val_loss=0.2398
+Epoch 19: acc=0.8681, val_acc=0.9307, loss=0.3882, val_loss=0.2246
+Epoch 20: acc=0.8689, val_acc=0.9315, loss=0.3863, val_loss=0.2218
+
+📊 HISTORIAL FASE 2:
+Epoch 1: acc=0.8640, val_acc=0.9533, loss=0.4098, val_loss=0.1481
+Epoch 2: acc=0.9475, val_acc=0.9711, loss=0.1653, val_loss=0.0935
+Epoch 3: acc=0.9642, val_acc=0.9777, loss=0.1127, val_loss=0.0701
+Epoch 4: acc=0.9727, val_acc=0.9811, loss=0.0842, val_loss=0.0578
+Epoch 5: acc=0.9784, val_acc=0.9844, loss=0.0661, val_loss=0.0480
+Epoch 6: acc=0.9824, val_acc=0.9864, loss=0.0535, val_loss=0.0417
+Epoch 7: acc=0.9853, val_acc=0.9882, loss=0.0443, val_loss=0.0366
+Epoch 8: acc=0.9879, val_acc=0.9891, loss=0.0367, val_loss=0.0348
+Epoch 9: acc=0.9897, val_acc=0.9902, loss=0.0313, val_loss=0.0303
+Epoch 10: acc=0.9912, val_acc=0.9904, loss=0.0268, val_loss=0.0309

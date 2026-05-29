@@ -1,0 +1,12 @@
+Image size = 224x224
+Batch size = 64
+Epochs = 20
+Time executing = 82023.93657159805
+Train accuracy: 0.8912
+Train loss: 0.3469
+Val accuracy: 0.8879
+Val loss: 0.3587
+
+🏆 MEJORES VALORES:
+Best val accuracy: 0.8879 (epoch 12)
+Best val loss: 0.3587 (epoch 13)
