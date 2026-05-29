@@ -9,7 +9,7 @@ from google import genai
 
 import google.generativeai as genai
 
-genai.configure(api_key="AQ.Ab8RN6LBi4D9ldxUvk1aVcMIfmWTh6CKOyclhYWJpt43yeyBMQ") # Pon tu clave aquí
+genai.configure(api_key=os.getenv("GEM_KEY")) # Pon tu clave aquí
 
 print("Modelos disponibles en tu cuenta para generación:")
 for m in genai.list_models():
@@ -24,7 +24,7 @@ for m in genai.list_models():
 # ==========================================
 # CONFIGURACIÓN
 # ==========================================
-API_KEY = "AQ.Ab8RN6LBi4D9ldxUvk1aVcMIfmWTh6CKOyclhYWJpt43yeyBMQ" # Sustituye por tu clave
+API_KEY = os.getenv("GEM_KEY") # Sustituye por tu clave
 CARPETA_BASE_TEST = "../../../../remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Testing" 
 ARCHIVO_SALIDA = "./Estudios/resultados_gemini.csv"
 
