@@ -9,6 +9,7 @@ from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout, Lamb
 from tensorflow.keras.models import Model
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
 from tensorflow.keras import mixed_precision
+from sklearn.utils.class_weight import compute_class_weight
 import time
 import datetime
 import numpy as np
@@ -28,65 +29,178 @@ print("GPUs disponibles:", gpus)
 for gpu in gpus:
     tf.config.experimental.set_memory_growth(gpu, True)
 
-# Mixed precision: float16 en capas internas → más rápido en GPU
-#mixed_precision.set_global_policy('mixed_float16')
-
-# XLA JIT compilation
 tf.config.optimizer.set_jit(True)
 
-ruta_train  = "/remote-repositorio/afrodita/repo-fast/tfg_jcabrera/Training"
-ruta_test   = "/remote-repositorio/afrodita/repo-fast/tfg_jcabrera/Testing"
+ruta_train  = "/remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Training"
+ruta_test   = "/remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Testing"
 ruta_output = "./Estudios"
-nombre_archivo = "modelo_efficientnetb3_principal_train"
-f_name = f"EfficientNetB3_{datetime.date.today()}_principal_train.txt"
+nombre_archivo = "modelo_efficientnetb3_augmentation1"
+f_name = f"EfficientNetB3_{datetime.date.today()}_augmentation1.txt"
 
 IMG_SIZE    = 300
 BATCH_SIZE  = 32
-NUM_CLASSES = 12
+NUM_CLASSES = 9
 EPOCHS      = 20
+
+# ==============================================================================
+# CONFIGURACIÓN DE BALANCEO
+# ==============================================================================
+# Target de imágenes por clase. Se ha elegido 80_000 como equilibrio entre
+# no desperdiciar datos de las clases grandes y no repetir en exceso las pequeñas.
+TARGET     = 80_000
+MAX_FACTOR = 8      # Cap máximo de repetición para evitar overfitting
+
+# Conteos reales del dataset (obtenidos en el análisis previo)
+CONTEOS_REALES = {
+    'drinking':              51_408,
+    'hair_and_makeup':       67_916,
+    'phonecall':            350_710,
+    'radio':                 31_736,
+    'reach_backseat':        13_390,
+    'reach_side':            83_919,
+    'safe_drive':           540_526,
+    'talking_to_passenger':  18_176,
+    'texting':               69_008,
+}
 
 print("Configuración lista")
 
 
 # ==============================================================================
-# DATASETS OPTIMIZADOS
+# DATA AUGMENTATION
+# Aplicado SOLO a imágenes de training (shuffle=True).
+# Las capas RandomFlip/Rotation/etc. se desactivan automáticamente en inferencia.
+#
+# Intensidad moderada-alta para clases con pocos datos originales:
+#   - RandomFlip horizontal:     reflejo espejo, muy seguro para conducción
+#   - RandomRotation ±15°:       simula variaciones de cámara/postura
+#   - RandomZoom ±15%:           simula distancias distintas al conductor
+#   - RandomTranslation ±10%:    simula encuadres ligeramente desplazados
+#   - RandomContrast ±20%:       simula condiciones de iluminación distintas
+#   - RandomBrightness ±15%:     simula día/noche/túnel
+#
+# NO se usa RandomFlip vertical ni rotaciones >20° porque en imágenes de
+# conducción el techo y el suelo tienen significado semántico claro.
 # ==============================================================================
-AUTOTUNE = tf.data.AUTOTUNE
+data_augmentation = tf.keras.Sequential([
+    tf.keras.layers.RandomFlip("horizontal"),
+    tf.keras.layers.RandomRotation(0.15),
+    tf.keras.layers.RandomZoom(0.15),
+    tf.keras.layers.RandomTranslation(height_factor=0.10, width_factor=0.10),
+    tf.keras.layers.RandomContrast(0.20),
+    tf.keras.layers.RandomBrightness(0.15),
+], name="data_augmentation")
 
-def make_dataset(ruta, subset, shuffle=False):
-    ds = tf.keras.utils.image_dataset_from_directory(
-        ruta,
-        validation_split=0.1,
-        subset=subset,
-        seed=123,
-        image_size=(IMG_SIZE, IMG_SIZE),
-        batch_size=BATCH_SIZE,
-        color_mode='rgb'
-    )
-    # Preprocesado específico de EfficientNet (NO dividir por 255)
-    ds = ds.map(
-        lambda x, y: (preprocess_input(tf.cast(x, tf.float32)), y),
-        num_parallel_calls=AUTOTUNE
-    )
+print("Data augmentation configurado")
+
+
+# ==============================================================================
+# PIPELINE DE DATOS BALANCEADO
+# Estrategia:
+#   · Clases grandes (>TARGET): undersampling aleatorio hasta TARGET
+#   · Clases pequeñas (<TARGET): oversampling por repetición de paths,
+#     con factor = min(round(TARGET/n), MAX_FACTOR)
+#   · El augmentation en cada época genera variantes distintas gracias a
+#     reshuffle_each_iteration=True + transformaciones aleatorias
+# ==============================================================================
+
+def load_and_preprocess(path, label):
+    img = tf.io.read_file(path)
+    img = tf.image.decode_jpeg(img, channels=3)
+    img = tf.image.resize(img, [IMG_SIZE, IMG_SIZE])
+    img = preprocess_input(tf.cast(img, tf.float32))
+    return img, label
+
+def make_dataset_balanced(ruta, shuffle=False):
+    class_names = sorted(os.listdir(ruta))
+    class_to_idx = {name: i for i, name in enumerate(class_names)}
+
+    all_paths  = []
+    all_labels = []
+
+    print(f"\n{'Clase':<25} {'Original':>10} {'Factor':>8} {'Final':>10}")
+    print("-" * 57)
+
+    for class_name in class_names:
+        class_dir = os.path.join(ruta, class_name)
+        if not os.path.isdir(class_dir):
+            continue
+
+        class_idx = class_to_idx[class_name]
+        files = [
+            os.path.join(class_dir, f)
+            for f in os.listdir(class_dir)
+            if f.lower().endswith(('.jpg', '.jpeg', '.png'))
+        ]
+        n = len(files)
+
+        if n > TARGET:
+            # Undersampling: selección aleatoria reproducible
+            rng = np.random.default_rng(seed=42)
+            files = list(rng.choice(files, size=TARGET, replace=False))
+            factor_str = "undersample"
+            final = TARGET
+        else:
+            factor = min(round(TARGET / n), MAX_FACTOR)
+            factor = max(factor, 1)
+            files  = files * factor
+            factor_str = f"×{factor}"
+            final  = len(files)
+
+        all_paths.extend(files)
+        all_labels.extend([class_idx] * final)
+
+        print(f"  {class_name:<23} {n:>10,} {factor_str:>8} {final:>10,}")
+
+    print(f"\n  Total imágenes en dataset: {len(all_paths):,}")
+
+    ds = tf.data.Dataset.from_tensor_slices((all_paths, all_labels))
+
     if shuffle:
-        ds = ds.shuffle(buffer_size=2000, reshuffle_each_iteration=True)
+        ds = ds.shuffle(buffer_size=len(all_paths), reshuffle_each_iteration=True)
 
-    #cache_path = f"/tmp/ds_cache_{subset}"
-    #ds = ds.cache(cache_path)       # Cachea en RAM tras la primera época → épocas siguientes mucho más rápidas
-    ds = ds.prefetch(AUTOTUNE)
+    ds = ds.map(load_and_preprocess, num_parallel_calls=tf.data.AUTOTUNE)
+
+    # Augmentation SOLO en training
+    if shuffle:
+        ds = ds.map(
+            lambda x, y: (data_augmentation(x, training=True), y),
+            num_parallel_calls=tf.data.AUTOTUNE
+        )
+
+    ds = ds.batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)
     return ds
 
-# NOTA: si el dataset es muy grande y se queda sin RAM, cambia .cache() por
-# .cache("/tmp/ds_cache_train") y .cache("/tmp/ds_cache_val") para cachear en disco
 
-train_datagen = make_dataset(ruta_train, "training",   shuffle=True)
-val_datagen   = make_dataset(ruta_train, "validation", shuffle=False)
+train_datagen = make_dataset_balanced(ruta_train, shuffle=True)
+val_datagen   = make_dataset_balanced(ruta_train, shuffle=False)  # sin augmentation
 
 print("\nDatasets listos 🚀")
 
 
 # ==============================================================================
+# CLASS WEIGHTS — red de seguridad adicional sobre el balanceo
+# Penaliza más los errores en clases con pocos datos originales
+# ==============================================================================
+labels_array = np.concatenate([
+    np.full(n, i) for i, n in enumerate(CONTEOS_REALES.values())
+])
+weights = compute_class_weight(
+    class_weight='balanced',
+    classes=np.unique(labels_array),
+    y=labels_array
+)
+class_weight_dict = dict(enumerate(weights))
+
+print("\nClass weights calculados:")
+for idx, (clase, _) in enumerate(CONTEOS_REALES.items()):
+    print(f"  [{idx}] {clase:<25}: {class_weight_dict[idx]:.4f}")
+
+
+# ==============================================================================
 # MODELO — EfficientNetB3 + cabeza personalizada
+# El data_augmentation NO se mete dentro del modelo porque ya se aplica
+# en el pipeline de datos, evitando duplicarlo en inferencia.
 # ==============================================================================
 base_model = EfficientNetB3(
     weights='imagenet',
@@ -101,7 +215,6 @@ x = Dropout(0.3)(x)
 x = Dense(128, activation='relu')(x)
 x = Dropout(0.2)(x)
 
-# Cast explícito a float32 ANTES de la capa final para evitar conflictos mixed_float16
 x = Lambda(lambda t: tf.cast(t, tf.float32))(x)
 
 predictions = Dense(NUM_CLASSES, activation='softmax', dtype='float32')(x)
@@ -175,6 +288,7 @@ history = model.fit(
     validation_data=val_datagen,
     epochs=EPOCHS,
     callbacks=callbacks,
+    class_weight=class_weight_dict,   # ← refuerzo adicional
     verbose=2
 )
 
@@ -193,7 +307,6 @@ base_model.trainable = True
 for layer in base_model.layers[:-30]:
     layer.trainable = False
 
-# Recompilar con LR muy bajo para fine-tuning
 model.compile(
     optimizer=tf.keras.optimizers.Adam(learning_rate=1e-5),
     loss='sparse_categorical_crossentropy',
@@ -233,6 +346,7 @@ history_ft = model.fit(
     validation_data=val_datagen,
     epochs=10,
     callbacks=callbacks_ft,
+    class_weight=class_weight_dict,   # ← también en fase 2
     verbose=2
 )
 
@@ -250,7 +364,18 @@ with open(ruta_archivo, "w", encoding='utf-8') as f:
     f.write(f"Modelo: EfficientNetB3\n")
     f.write(f"Image size = {IMG_SIZE}x{IMG_SIZE}\n")
     f.write(f"Batch size = {BATCH_SIZE}\n")
-    f.write(f"Epochs fase 1 = {len(history.history['accuracy'])}\n")
+    f.write(f"Target por clase = {TARGET}\n")
+    f.write(f"Max factor oversampling = {MAX_FACTOR}\n\n")
+
+    f.write("Distribución de clases tras balanceo:\n")
+    for clase, n_orig in CONTEOS_REALES.items():
+        if n_orig > TARGET:
+            f.write(f"  {clase}: {n_orig} → {TARGET} (undersampling)\n")
+        else:
+            factor = min(round(TARGET / n_orig), MAX_FACTOR)
+            f.write(f"  {clase}: {n_orig} → {n_orig * factor} (×{factor})\n")
+
+    f.write(f"\nEpochs fase 1 = {len(history.history['accuracy'])}\n")
     f.write(f"Epochs fase 2 = {len(history_ft.history['accuracy'])}\n")
     f.write(f"Tiempo fase 1 = {tiempo_total/60:.2f} min\n")
     f.write(f"Tiempo fase 2 = {tiempo_ft/60:.2f} min\n\n")
@@ -259,6 +384,10 @@ with open(ruta_archivo, "w", encoding='utf-8') as f:
     best_acc_f2 = max(history_ft.history['val_accuracy'])
     f.write(f"Mejor val_accuracy fase 1: {best_acc_f1:.4f}\n")
     f.write(f"Mejor val_accuracy fase 2: {best_acc_f2:.4f}\n")
+
+    f.write("\nClass weights utilizados:\n")
+    for idx, clase in enumerate(CONTEOS_REALES.keys()):
+        f.write(f"  [{idx}] {clase}: {class_weight_dict[idx]:.4f}\n")
 
 print(f"Métricas guardadas en: {ruta_archivo}")
 
@@ -283,8 +412,3 @@ graficar_loss(history_ft, titulo="Loss - Fase 2 (Fine-Tuning)", guardar=True,
               ruta_guardado=os.path.join(ruta_output, "Graficas", f"loss_fase2_{nombre_archivo}.png"))
 
 print("\n✅ Todo completado.")
-
-
-
-
-

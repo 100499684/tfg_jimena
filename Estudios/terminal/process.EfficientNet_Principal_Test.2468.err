@@ -1,0 +1,24 @@
+2026-06-01 08:35:59.069643: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-01 08:35:59.110357: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/home/jcabrera@caos.uc3m.es/tfg-jimena/EfficientNet_test.py", line 78, in <module>
+    test_ds_raw = tf.keras.utils.image_dataset_from_directory(
+    	ruta_test,
+    ...<3 lines>...
+    	color_mode='rgb'
+    )
+  File "/home/jcabrera@caos.uc3m.es/.conda/envs/tf-gpu-2026-jcabrera/lib/python3.13/site-packages/keras/src/utils/image_dataset_utils.py", line 265, in image_dataset_from_directory
+    image_paths, labels, class_names = dataset_utils.index_directory(
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        directory,
+        ^^^^^^^^^^
+    ...<6 lines>...
+        verbose=verbose,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/jcabrera@caos.uc3m.es/.conda/envs/tf-gpu-2026-jcabrera/lib/python3.13/site-packages/keras/src/utils/dataset_utils.py", line 743, in index_directory
+    for subdir in sorted(os_module.listdir(directory)):
+                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/remote-repositorio/afrodita/repo-fast/tfg_jcabrera/Testing'
