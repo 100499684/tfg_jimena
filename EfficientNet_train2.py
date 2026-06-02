@@ -42,7 +42,7 @@ f_name = f"EfficientNetB3_{datetime.date.today()}_principal_train.txt"
 
 IMG_SIZE    = 300
 BATCH_SIZE  = 32
-NUM_CLASSES = 12
+NUM_CLASSES = 10
 EPOCHS      = 20
 
 print("Configuración lista")

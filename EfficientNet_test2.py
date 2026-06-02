@@ -28,7 +28,7 @@ ruta_modelo = "./Estudios/Modelo/mejor_modelo_efficientnetb3_principal_train_ft.
 ruta_output = "./Estudios"
 
 IMG_SIZE = 300
-BATCH_SIZE = 16   # más seguro para GPU llena
+BATCH_SIZE = 16   
 
 fecha = datetime.date.today()
 
@@ -194,4 +194,4 @@ with open(ruta_txt, "w", encoding="utf-8") as f:
 
 print("\nGuardado en:", ruta_txt)
 
-print("\n✅ EVALUACIÓN COMPLETADA")
+print("\n EVALUACIÓN COMPLETADA")
