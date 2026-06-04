@@ -1,0 +1,250 @@
+2026-06-03 23:26:33.770546: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-03 23:26:33.811033: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1780529283.377662  796150 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 43489 MB memory:  -> device: 0, name: NVIDIA L40S, pci bus id: 0000:02:00.0, compute capability: 8.9
+2026-06-03 23:28:38.021673: I external/local_xla/xla/service/service.cc:163] XLA service 0x7737500035e0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2026-06-03 23:28:38.021879: I external/local_xla/xla/service/service.cc:171]   StreamExecutor device (0): NVIDIA L40S, Compute Capability 8.9
+2026-06-03 23:28:39.001521: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 91700
+I0000 00:00:1780529320.517815  796192 device_compiler.h:196] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2026-06-03 23:28:48.152774: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 41 of 2000
+2026-06-03 23:29:08.084336: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 120 of 2000
+2026-06-03 23:29:28.123042: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 223 of 2000
+2026-06-03 23:29:38.147633: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 244 of 2000
+2026-06-03 23:29:58.049145: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 362 of 2000
+2026-06-03 23:30:08.231082: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 405 of 2000
+2026-06-03 23:30:36.732583: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 492 of 2000
+2026-06-03 23:30:48.071980: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 553 of 2000
+2026-06-03 23:30:58.095128: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 606 of 2000
+2026-06-03 23:31:17.997926: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 702 of 2000
+2026-06-03 23:31:28.079746: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 746 of 2000
+2026-06-03 23:31:48.038010: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 851 of 2000
+2026-06-03 23:32:08.000353: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 962 of 2000
+2026-06-03 23:32:34.770435: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 989 of 2000
+2026-06-03 23:32:48.119568: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1069 of 2000
+2026-06-03 23:32:58.251016: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1131 of 2000
+2026-06-03 23:33:18.113696: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1238 of 2000
+2026-06-03 23:33:28.368254: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1303 of 2000
+2026-06-03 23:33:48.122475: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1405 of 2000
+2026-06-03 23:34:08.011916: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1520 of 2000
+2026-06-03 23:34:18.241270: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1567 of 2000
+2026-06-03 23:34:37.996721: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1688 of 2000
+2026-06-03 23:34:48.044354: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1742 of 2000
+2026-06-03 23:35:08.254820: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1852 of 2000
+2026-06-03 23:35:28.040663: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1969 of 2000
+2026-06-03 23:36:14.852423: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1983 of 2000
+2026-06-03 23:36:17.822882: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-03 23:36:18.572210: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2026-06-03 23:36:25.481086: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-06-03 23:36:26.472301: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_10641', 520 bytes spill stores, 520 bytes spill loads
+
+2026-06-03 23:36:31.423529: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:31.519012: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:33.649303: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:33.745217: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:34.023203: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:34.123494: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:35.500860: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:35.589390: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:35.882735: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:35.982906: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:36.458694: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:36.551929: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:36.977893: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-03 23:36:37.086324: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 01:35:50.372647: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 86 of 2000
+2026-06-04 01:36:00.425352: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 179 of 2000
+2026-06-04 01:36:10.441389: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 266 of 2000
+2026-06-04 01:36:30.414080: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 450 of 2000
+2026-06-04 01:36:50.397153: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 645 of 2000
+2026-06-04 01:37:10.372450: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 840 of 2000
+2026-06-04 01:37:20.385602: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 941 of 2000
+2026-06-04 01:37:30.387203: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1042 of 2000
+2026-06-04 01:37:50.393283: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1237 of 2000
+2026-06-04 01:38:00.459636: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1335 of 2000
+2026-06-04 01:38:20.335662: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1524 of 2000
+2026-06-04 01:38:30.387652: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1622 of 2000
+2026-06-04 01:38:50.535629: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1805 of 2000
+2026-06-04 01:39:10.340868: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1987 of 2000
+2026-06-04 01:39:11.934890: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 02:27:49.303805: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'loop_concatenate_fusion', 16 bytes spill stores, 56 bytes spill loads
+
+2026-06-04 02:27:54.203030: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:54.294689: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:55.688903: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:55.787117: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:57.005807: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:57.095620: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:57.372461: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:57.466789: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:57.972188: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:58.066336: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:58.560567: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:58.673492: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:27:58.782181: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:06.681300: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:06.778437: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:08.898983: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:09.000423: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:10.880757: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:10.981576: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:11.070230: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:11.760760: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:11.861786: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:12.630038: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:12.735633: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:12.840759: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:13.561641: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:13.690758: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-04 02:34:31.203539: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 143 of 2000
+2026-06-04 02:34:41.212892: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 239 of 2000
+2026-06-04 02:35:01.216002: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 435 of 2000
+2026-06-04 02:35:11.226212: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 542 of 2000
+2026-06-04 02:35:31.155391: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 729 of 2000
+2026-06-04 02:35:41.180815: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 839 of 2000
+2026-06-04 02:36:01.234259: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1039 of 2000
+2026-06-04 02:36:21.190970: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1228 of 2000
+2026-06-04 02:36:31.211028: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1353 of 2000
+2026-06-04 02:36:51.239705: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1626 of 2000
+2026-06-04 02:37:01.263939: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1836 of 2000
+2026-06-04 02:37:19.389033: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 03:30:28.019860: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 113 of 2000
+2026-06-04 03:30:38.038793: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 220 of 2000
+2026-06-04 03:30:48.044395: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 407 of 2000
+2026-06-04 03:30:58.131604: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 504 of 2000
+2026-06-04 03:31:18.288388: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 835 of 2000
+2026-06-04 03:31:38.219720: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1064 of 2000
+2026-06-04 03:31:58.018373: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1501 of 2000
+2026-06-04 03:32:08.107621: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1943 of 2000
+2026-06-04 03:32:14.090321: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 04:10:47.340317: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 111 of 2000
+2026-06-04 04:10:57.341038: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 218 of 2000
+2026-06-04 04:11:07.402442: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 307 of 2000
+2026-06-04 04:11:27.402347: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 599 of 2000
+2026-06-04 04:11:37.440547: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 695 of 2000
+2026-06-04 04:11:57.420657: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 945 of 2000
+2026-06-04 04:12:17.400499: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1139 of 2000
+2026-06-04 04:12:27.427943: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1233 of 2000
+2026-06-04 04:12:47.388723: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1418 of 2000
+2026-06-04 04:13:07.388859: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1587 of 2000
+2026-06-04 04:13:17.433110: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1672 of 2000
+2026-06-04 04:13:37.358543: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1848 of 2000
+2026-06-04 04:13:47.374811: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1945 of 2000
+2026-06-04 04:13:53.168521: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 04:50:16.214407: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1000 of 2000
+2026-06-04 04:50:26.292781: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 05:31:49.844145: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 986 of 2000
+2026-06-04 05:31:59.847475: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1974 of 2000
+2026-06-04 05:32:00.113887: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 06:05:52.198826: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 449 of 2000
+2026-06-04 06:06:02.241334: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 857 of 2000
+2026-06-04 06:06:22.188121: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1452 of 2000
+2026-06-04 06:06:32.248004: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1691 of 2000
+2026-06-04 06:06:42.248764: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1991 of 2000
+2026-06-04 06:06:42.588088: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 06:54:11.553328: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 391 of 2000
+2026-06-04 06:54:31.475091: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1097 of 2000
+2026-06-04 06:54:51.453582: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1815 of 2000
+2026-06-04 06:54:57.280468: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 07:33:50.281721: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 590 of 2000
+2026-06-04 07:34:10.258448: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1653 of 2000
+2026-06-04 07:34:14.760475: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 08:12:39.640110: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 449 of 2000
+2026-06-04 08:12:59.642803: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1166 of 2000
+2026-06-04 08:13:19.632218: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1874 of 2000
+2026-06-04 08:13:24.730441: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 08:48:21.014761: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 517 of 2000
+2026-06-04 08:48:31.014793: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1156 of 2000
+2026-06-04 08:48:41.034173: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1258 of 2000
+2026-06-04 08:48:51.047381: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1393 of 2000
+2026-06-04 08:49:11.012081: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1648 of 2000
+2026-06-04 08:49:21.104090: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1764 of 2000
+2026-06-04 08:49:38.910687: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 09:30:53.620076: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 742 of 2000
+2026-06-04 09:31:03.646909: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1519 of 2000
+2026-06-04 09:31:13.678319: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1667 of 2000
+2026-06-04 09:31:33.659970: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1920 of 2000
+2026-06-04 09:31:39.146560: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 10:05:18.568710: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 773 of 2000
+2026-06-04 10:05:28.575896: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1530 of 2000
+2026-06-04 10:05:38.604914: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1681 of 2000
+2026-06-04 10:05:58.610818: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1938 of 2000
+2026-06-04 10:06:03.368861: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 10:41:37.281850: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 585 of 2000
+2026-06-04 10:41:47.291678: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1487 of 2000
+2026-06-04 10:41:57.335190: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1639 of 2000
+2026-06-04 10:42:17.324817: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1865 of 2000
+2026-06-04 10:42:26.677412: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 11:19:36.102052: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 102 of 2000
+2026-06-04 11:19:46.252731: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 198 of 2000
+2026-06-04 11:20:06.372128: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 370 of 2000
+2026-06-04 11:20:26.103671: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 543 of 2000
+2026-06-04 11:20:36.122608: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 635 of 2000
+2026-06-04 11:20:46.302264: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 729 of 2000
+2026-06-04 11:21:06.107306: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 896 of 2000
+2026-06-04 11:21:26.140561: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1073 of 2000
+2026-06-04 11:21:36.189444: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1165 of 2000
+2026-06-04 11:21:56.117829: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1345 of 2000
+2026-06-04 11:22:06.223398: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1434 of 2000
+2026-06-04 11:22:26.131033: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1658 of 2000
+2026-06-04 11:22:45.338581: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 12:01:28.166031: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 140 of 2000
+2026-06-04 12:01:48.161255: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 392 of 2000
+2026-06-04 12:01:58.244207: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 483 of 2000
+2026-06-04 12:02:18.235374: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 651 of 2000
+2026-06-04 12:02:38.313285: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 834 of 2000
+2026-06-04 12:02:58.353674: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1045 of 2000
+2026-06-04 12:03:18.111878: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1244 of 2000
+2026-06-04 12:03:38.091113: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1455 of 2000
+2026-06-04 12:03:48.093930: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1562 of 2000
+2026-06-04 12:03:58.105525: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1699 of 2000
+2026-06-04 12:04:08.123998: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1879 of 2000
+2026-06-04 12:04:16.391015: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 12:40:07.187310: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 111 of 2000
+2026-06-04 12:40:27.099028: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 407 of 2000
+2026-06-04 12:40:47.068094: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 648 of 2000
+2026-06-04 12:40:57.134297: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 821 of 2000
+2026-06-04 12:41:17.086048: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1041 of 2000
+2026-06-04 12:41:27.113105: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1185 of 2000
+2026-06-04 12:41:47.079357: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1444 of 2000
+2026-06-04 12:41:57.101335: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1578 of 2000
+2026-06-04 12:42:07.192666: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1948 of 2000
+2026-06-04 12:42:10.203978: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 13:17:50.523371: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 125 of 2000
+2026-06-04 13:18:10.428374: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 382 of 2000
+2026-06-04 13:18:30.472771: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 662 of 2000
+2026-06-04 13:18:40.521841: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 843 of 2000
+2026-06-04 13:19:00.466635: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1344 of 2000
+2026-06-04 13:19:10.468097: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1475 of 2000
+2026-06-04 13:19:27.824542: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 13:40:27.260609: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1019 of 2000
+2026-06-04 13:40:36.884272: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+E0000 00:00:1780581387.511901  796150 meta_optimizer.cc:967] layout failed: INVALID_ARGUMENT: Size of values 0 does not match size of permutation 4 @ fanin shape inStatefulPartitionedCall/functional_1_1/efficientnetb3_1/block1b_drop_1/stateless_dropout/SelectV2-2-TransposeNHWCToNCHW-LayoutOptimizer
+2026-06-04 13:56:38.393381: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1041 of 2000
+2026-06-04 13:56:47.605494: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 13:56:51.683146: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+E0000 00:00:1780582317.483373  796188 meta_optimizer.cc:967] layout failed: INVALID_ARGUMENT: Size of values 0 does not match size of permutation 4 @ fanin shape inStatefulPartitionedCall/functional_1_1/efficientnetb3_1/block1b_drop_1/stateless_dropout/SelectV2-2-TransposeNHWCToNCHW-LayoutOptimizer
+2026-06-04 14:14:32.732534: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1041 of 2000
+2026-06-04 14:14:41.995685: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 14:29:56.772787: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'loop_concatenate_fusion', 16 bytes spill stores, 56 bytes spill loads
+
+2026-06-04 14:32:15.096153: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1009 of 2000
+2026-06-04 14:32:24.850729: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 14:49:45.927731: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1039 of 2000
+2026-06-04 14:49:55.205151: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 15:07:12.869271: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1036 of 2000
+2026-06-04 15:07:22.134319: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 15:24:40.329619: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1036 of 2000
+2026-06-04 15:24:49.613031: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 15:42:05.477470: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1039 of 2000
+2026-06-04 15:42:14.741615: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 15:59:31.806496: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1043 of 2000
+2026-06-04 15:59:41.021187: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 16:17:00.559829: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1035 of 2000
+2026-06-04 16:17:09.865037: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-04 16:34:28.382791: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1032 of 2000
+2026-06-04 16:34:37.736341: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+/home/jcabrera@caos.uc3m.es/tfg-jimena/Codigo_graficas/graficas.py:82: UserWarning: Glyph 10024 (\N{SPARKLES}) missing from font(s) DejaVu Sans.
+  plt.savefig(ruta_guardado, dpi=300, bbox_inches='tight')
+/home/jcabrera@caos.uc3m.es/tfg-jimena/Codigo_graficas/graficas.py:164: UserWarning: Glyph 10024 (\N{SPARKLES}) missing from font(s) DejaVu Sans.
+  plt.savefig(ruta_guardado, dpi=300, bbox_inches='tight')

@@ -1,7 +1,7 @@
 import os
 
-ruta_train = "/remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Training/reach_side"
-ruta_test = "/remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Testing/reach_side"
+ruta_train = "../Training/texting"
+ruta_test = "../Testing/texting"
 
 # Extensiones de imágenes comunes
 extensiones = (".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp")

@@ -32,17 +32,17 @@ for gpu in gpus:
 #mixed_precision.set_global_policy('mixed_float16')
 
 # XLA JIT compilation
-tf.config.optimizer.set_jit(True)
+#tf.config.optimizer.set_jit(True)
 
-ruta_train  = "/remote-repositorio/afrodita/repo-fast/tfg_jcabrera/Training"
-ruta_test   = "/remote-repositorio/afrodita/repo-fast/tfg_jcabrera/Testing"
+ruta_train  = "/remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Training"
+ruta_test   = "/remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Testing"
 ruta_output = "./Estudios"
-nombre_archivo = "modelo_efficientnetb3_principal_train"
-f_name = f"EfficientNetB3_{datetime.date.today()}_principal_train.txt"
+nombre_archivo = "modelo_efficientnetb3_elim_reachside_con_text_train"
+f_name = f"EfficientNetB3_{datetime.date.today()}_elim_reachside_con_text_train.txt"
 
 IMG_SIZE    = 300
-BATCH_SIZE  = 32
-NUM_CLASSES = 10
+BATCH_SIZE  = 16
+NUM_CLASSES = 9
 EPOCHS      = 20
 
 print("Configuración lista")

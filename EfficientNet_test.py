@@ -36,7 +36,7 @@ from Codigo_graficas.m_confusion import generar_matriz_confusion
 tf.keras.backend.clear_session()
 
 def restart_without_gpu():
-	print('\n⚠️  Reiniciando proceso en CPU-only para evitar OOM...')
+	print('\nReiniciando proceso en CPU-only para evitar OOM...')
 	# set marker so the restarted process disables GPU
 	os.environ["DISABLE_GPU_ON_RESTART"] = "1"
 	os.environ["CUDA_VISIBLE_DEVICES"] = ""
@@ -47,7 +47,7 @@ def restart_without_gpu():
 # -----------------------------
 # Configuración (ajusta si hace falta)
 # -----------------------------
-ruta_test = '/remote-repositorio/afrodita/repo-fast/tfg_jcabrera/Testing'
+ruta_test = './Testing'
 ruta_output = './Estudios'
 nombre_modelo_ft = 'mejor_modelo_efficientnetb3_principal_train_ft.keras'
 ruta_modelo_ft = os.path.join(ruta_output, 'Modelo', nombre_modelo_ft)
