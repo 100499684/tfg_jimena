@@ -2,6 +2,7 @@
 Training/
 Testing/
 Training_sinteticas/
+imagenes_sinteticas_*/
 
 # caches
 *.data-00000-of-00001
@@ -27,7 +28,9 @@ __pycache__/
 .ipynb_checkpoints/
 
 # misc
-*.out
+*.err
 EOF
 
-.env
+.envEstudios/terminal/process.EfficientNetB3_augm_eliminados_9clases_completo2.2578.out
+Estudios/terminal/process.EfficientNet_aug_9clases_train.2544.out
+Estudios/terminal/process.EfficientNet_augm_eliminados3_train.2532.out

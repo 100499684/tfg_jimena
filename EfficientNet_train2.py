@@ -34,18 +34,20 @@ for gpu in gpus:
 # XLA JIT compilation
 #tf.config.optimizer.set_jit(True)
 
-ruta_train  = "/remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Training"
-ruta_test   = "/remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Testing"
+ruta_train  = "remote-repositorio/afrodita/repo-fast/tfg_jcabrera/Training"
+ruta_test   = "remote-repositorio/afrodita/repo-fast/tfg_jcabrera/Testing"
 ruta_output = "./Estudios"
-nombre_archivo = "modelo_efficientnetb3_elim_reachside_con_text_train"
-f_name = f"EfficientNetB3_{datetime.date.today()}_elim_reachside_con_text_train.txt"
+nombre_archivo = "modelo_efficientnetb3_imagenes_sinteticas_train"
+f_name = f"EfficientNetB3_{datetime.date.today()}_imagenes_sinteticas.txt"
 
 IMG_SIZE    = 300
 BATCH_SIZE  = 16
-NUM_CLASSES = 9
+# NUM_CLASSES se determina después de crear el dataset para evitar desajustes
+NUM_CLASSES = None
 EPOCHS      = 20
 
 print("Configuración lista")
+print("Con Imagenes sinteticas, en repo fast")
 
 
 # ==============================================================================
@@ -84,6 +86,17 @@ val_datagen   = make_dataset(ruta_train, "validation", shuffle=False)
 
 print("\nDatasets listos 🚀")
 
+# Determinar dinámicamente las clases y número de clases
+try:
+    class_names = getattr(train_datagen, 'class_names', None)
+except Exception:
+    class_names = None
+if not class_names:
+    # fallback: listar subdirectorios en la ruta de entrenamiento
+    class_names = sorted([d for d in os.listdir(ruta_train) if os.path.isdir(os.path.join(ruta_train, d))])
+NUM_CLASSES = len(class_names)
+print(f"Clases detectadas: {NUM_CLASSES} -> {class_names}")
+
 
 # ==============================================================================
 # MODELO — EfficientNetB3 + cabeza personalizada
@@ -109,7 +122,7 @@ predictions = Dense(NUM_CLASSES, activation='softmax', dtype='float32')(x)
 model = Model(inputs=base_model.input, outputs=predictions)
 
 model.compile(
-    optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
+    optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4),
     loss='sparse_categorical_crossentropy',
     metrics=['accuracy']
 )
@@ -195,7 +208,7 @@ for layer in base_model.layers[:-30]:
 
 # Recompilar con LR muy bajo para fine-tuning
 model.compile(
-    optimizer=tf.keras.optimizers.Adam(learning_rate=1e-5),
+    optimizer=tf.keras.optimizers.Adam(learning_rate=5e-4),
     loss='sparse_categorical_crossentropy',
     metrics=['accuracy']
 )

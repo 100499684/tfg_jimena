@@ -1,0 +1,12 @@
+Modelo: EfficientNetB3
+Image size = 300x300
+Batch size = 64
+Epochs fase 1 = 6
+Epochs fase 2 = 4
+Tiempo fase 1 = 948.44 min
+Tiempo fase 2 = 370.01 min
+
+Mejor val_accuracy fase 1: 0.0651
+Mejor val_accuracy fase 2: 0.0651
+Test Accuracy final: 0.0381
+Test Loss final: 2.8358

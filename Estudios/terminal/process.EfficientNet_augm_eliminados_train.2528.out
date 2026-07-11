@@ -1,0 +1,237 @@
+🚀 Iniciando job: 2528
+📅 Fecha: Wed Jun  3 11:26:31 PM UTC 2026
+🖥️  Nodo: portobelo
+🎮 GPU: NVIDIA L40S
+NVIDIA L40S
+NVIDIA L40S
+GPUs disponibles: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Configuración lista
+Found 1226789 files belonging to 9 classes.
+Using 1104111 files for training.
+Found 1226789 files belonging to 9 classes.
+Using 122678 files for validation.
+
+Datasets listos 🚀
+
+Resumen del modelo:
+Model: "functional_1"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ input_layer_1 (InputLayer)           │ (None, 300, 300, 3)         │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ data_augmentation (Sequential)       │ (None, 300, 300, 3)         │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ efficientnetb3 (Functional)          │ (None, 10, 10, 1536)        │      10,783,535 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ global_average_pooling2d             │ (None, 1536)                │               0 │
+│ (GlobalAveragePooling2D)             │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout (Dropout)                    │ (None, 1536)                │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense (Dense)                        │ (None, 128)                 │         196,736 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_1 (Dropout)                  │ (None, 128)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ lambda (Lambda)                      │ (None, 128)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_1 (Dense)                      │ (None, 9)                   │           1,161 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 10,981,432 (41.89 MB)
+ Trainable params: 197,897 (773.04 KB)
+ Non-trainable params: 10,783,535 (41.14 MB)
+✅ Callbacks configurados
+
+============================================================
+🎯 FASE 1: ENTRENANDO CABEZA DE CLASIFICACIÓN
+============================================================
+Epoch 1/20
+
+Epoch 1: val_accuracy improved from None to 0.87386, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 1: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 7631s - 221ms/step - accuracy: 0.7694 - loss: 0.6835 - val_accuracy: 0.8739 - val_loss: 0.4081 - learning_rate: 0.0010
+Epoch 2/20
+
+Epoch 2: val_accuracy improved from 0.87386 to 0.88226, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 2: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 3521s - 102ms/step - accuracy: 0.8005 - loss: 0.5955 - val_accuracy: 0.8823 - val_loss: 0.3816 - learning_rate: 0.0010
+Epoch 3/20
+
+Epoch 3: val_accuracy improved from 0.88226 to 0.89021, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 3: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 3357s - 97ms/step - accuracy: 0.8077 - loss: 0.5753 - val_accuracy: 0.8902 - val_loss: 0.3611 - learning_rate: 0.0010
+Epoch 4/20
+
+Epoch 4: val_accuracy did not improve from 0.89021
+34504/34504 - 2419s - 70ms/step - accuracy: 0.8128 - loss: 0.5635 - val_accuracy: 0.8881 - val_loss: 0.3704 - learning_rate: 0.0010
+Epoch 5/20
+
+Epoch 5: val_accuracy improved from 0.89021 to 0.89203, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 5: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 2369s - 69ms/step - accuracy: 0.8157 - loss: 0.5564 - val_accuracy: 0.8920 - val_loss: 0.3487 - learning_rate: 0.0010
+Epoch 6/20
+
+Epoch 6: val_accuracy improved from 0.89203 to 0.89560, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 6: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 2494s - 72ms/step - accuracy: 0.8179 - loss: 0.5500 - val_accuracy: 0.8956 - val_loss: 0.3516 - learning_rate: 0.0010
+Epoch 7/20
+
+Epoch 7: val_accuracy improved from 0.89560 to 0.89628, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 7: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 2042s - 59ms/step - accuracy: 0.8187 - loss: 0.5473 - val_accuracy: 0.8963 - val_loss: 0.3440 - learning_rate: 0.0010
+Epoch 8/20
+
+Epoch 8: val_accuracy improved from 0.89628 to 0.90097, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 8: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 2899s - 84ms/step - accuracy: 0.8200 - loss: 0.5452 - val_accuracy: 0.9010 - val_loss: 0.3399 - learning_rate: 0.0010
+Epoch 9/20
+
+Epoch 9: val_accuracy improved from 0.90097 to 0.90169, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 9: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 2379s - 69ms/step - accuracy: 0.8211 - loss: 0.5421 - val_accuracy: 0.9017 - val_loss: 0.3345 - learning_rate: 0.0010
+Epoch 10/20
+
+Epoch 10: val_accuracy improved from 0.90169 to 0.90323, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 10: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 2329s - 68ms/step - accuracy: 0.8217 - loss: 0.5404 - val_accuracy: 0.9032 - val_loss: 0.3261 - learning_rate: 0.0010
+Epoch 11/20
+
+Epoch 11: val_accuracy did not improve from 0.90323
+34504/34504 - 2141s - 62ms/step - accuracy: 0.8225 - loss: 0.5391 - val_accuracy: 0.8997 - val_loss: 0.3318 - learning_rate: 0.0010
+Epoch 12/20
+
+Epoch 12: val_accuracy did not improve from 0.90323
+34504/34504 - 2553s - 74ms/step - accuracy: 0.8237 - loss: 0.5367 - val_accuracy: 0.9030 - val_loss: 0.3235 - learning_rate: 0.0010
+Epoch 13/20
+
+Epoch 13: val_accuracy improved from 0.90323 to 0.90451, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 13: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 2065s - 60ms/step - accuracy: 0.8240 - loss: 0.5355 - val_accuracy: 0.9045 - val_loss: 0.3161 - learning_rate: 0.0010
+Epoch 14/20
+
+Epoch 14: val_accuracy improved from 0.90451 to 0.90760, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 14: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 2179s - 63ms/step - accuracy: 0.8246 - loss: 0.5346 - val_accuracy: 0.9076 - val_loss: 0.3177 - learning_rate: 0.0010
+Epoch 15/20
+
+Epoch 15: val_accuracy did not improve from 0.90760
+34504/34504 - 2279s - 66ms/step - accuracy: 0.8249 - loss: 0.5334 - val_accuracy: 0.9010 - val_loss: 0.3325 - learning_rate: 0.0010
+Epoch 16/20
+
+Epoch 16: val_accuracy did not improve from 0.90760
+
+Epoch 16: ReduceLROnPlateau reducing learning rate to 0.00020000000949949026.
+34504/34504 - 2512s - 73ms/step - accuracy: 0.8243 - loss: 0.5343 - val_accuracy: 0.9038 - val_loss: 0.3203 - learning_rate: 0.0010
+Epoch 17/20
+
+Epoch 17: val_accuracy improved from 0.90760 to 0.91011, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 17: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 2319s - 67ms/step - accuracy: 0.8324 - loss: 0.5093 - val_accuracy: 0.9101 - val_loss: 0.3087 - learning_rate: 2.0000e-04
+Epoch 18/20
+
+Epoch 18: val_accuracy did not improve from 0.91011
+34504/34504 - 2263s - 66ms/step - accuracy: 0.8338 - loss: 0.5048 - val_accuracy: 0.9091 - val_loss: 0.3091 - learning_rate: 2.0000e-04
+Epoch 19/20
+
+Epoch 19: val_accuracy improved from 0.91011 to 0.91110, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+
+Epoch 19: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados.keras
+34504/34504 - 1357s - 39ms/step - accuracy: 0.8339 - loss: 0.5035 - val_accuracy: 0.9111 - val_loss: 0.3048 - learning_rate: 2.0000e-04
+Epoch 20/20
+
+Epoch 20: val_accuracy did not improve from 0.91110
+34504/34504 - 955s - 28ms/step - accuracy: 0.8348 - loss: 0.5003 - val_accuracy: 0.9101 - val_loss: 0.3038 - learning_rate: 2.0000e-04
+Restoring model weights from the end of the best epoch: 19.
+
+✅ Fase 1 completada en 867.71 minutos
+
+============================================================
+🎯 FASE 2: FINE-TUNING (últimas 30 capas)
+============================================================
+Epoch 1/10
+
+Epoch 1: val_accuracy improved from None to 0.94339, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+
+Epoch 1: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+34504/34504 - 1088s - 32ms/step - accuracy: 0.8493 - loss: 0.5159 - val_accuracy: 0.9434 - val_loss: 0.1864 - learning_rate: 1.0000e-05
+Epoch 2/10
+
+Epoch 2: val_accuracy improved from 0.94339 to 0.95440, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+
+Epoch 2: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+34504/34504 - 1062s - 31ms/step - accuracy: 0.9146 - loss: 0.2742 - val_accuracy: 0.9544 - val_loss: 0.1493 - learning_rate: 1.0000e-05
+Epoch 3/10
+
+Epoch 3: val_accuracy improved from 0.95440 to 0.96068, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+
+Epoch 3: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+34504/34504 - 1051s - 30ms/step - accuracy: 0.9293 - loss: 0.2275 - val_accuracy: 0.9607 - val_loss: 0.1262 - learning_rate: 1.0000e-05
+Epoch 4/10
+
+Epoch 4: val_accuracy improved from 0.96068 to 0.96391, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+
+Epoch 4: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+34504/34504 - 1047s - 30ms/step - accuracy: 0.9381 - loss: 0.1991 - val_accuracy: 0.9639 - val_loss: 0.1138 - learning_rate: 1.0000e-05
+Epoch 5/10
+
+Epoch 5: val_accuracy improved from 0.96391 to 0.96535, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+
+Epoch 5: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+34504/34504 - 1047s - 30ms/step - accuracy: 0.9435 - loss: 0.1819 - val_accuracy: 0.9653 - val_loss: 0.1071 - learning_rate: 1.0000e-05
+Epoch 6/10
+
+Epoch 6: val_accuracy improved from 0.96535 to 0.96828, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+
+Epoch 6: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+34504/34504 - 1045s - 30ms/step - accuracy: 0.9475 - loss: 0.1678 - val_accuracy: 0.9683 - val_loss: 0.0985 - learning_rate: 1.0000e-05
+Epoch 7/10
+
+Epoch 7: val_accuracy improved from 0.96828 to 0.97033, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+
+Epoch 7: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+34504/34504 - 1046s - 30ms/step - accuracy: 0.9509 - loss: 0.1572 - val_accuracy: 0.9703 - val_loss: 0.0922 - learning_rate: 1.0000e-05
+Epoch 8/10
+
+Epoch 8: val_accuracy improved from 0.97033 to 0.97211, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+
+Epoch 8: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+34504/34504 - 1049s - 30ms/step - accuracy: 0.9535 - loss: 0.1484 - val_accuracy: 0.9721 - val_loss: 0.0878 - learning_rate: 1.0000e-05
+Epoch 9/10
+
+Epoch 9: val_accuracy improved from 0.97211 to 0.97247, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+
+Epoch 9: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+34504/34504 - 1048s - 30ms/step - accuracy: 0.9555 - loss: 0.1416 - val_accuracy: 0.9725 - val_loss: 0.0860 - learning_rate: 1.0000e-05
+Epoch 10/10
+
+Epoch 10: val_accuracy improved from 0.97247 to 0.97349, saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+
+Epoch 10: finished saving model to ./Estudios/Modelo/mejor_modelo_efficientnetb3_augmentation_eliminados_ft.keras
+34504/34504 - 1047s - 30ms/step - accuracy: 0.9574 - loss: 0.1352 - val_accuracy: 0.9735 - val_loss: 0.0814 - learning_rate: 1.0000e-05
+Restoring model weights from the end of the best epoch: 10.
+
+✅ Fase 2 completada en 175.52 minutos
+Métricas guardadas en: ./Estudios/Entrenamiento/EfficientNetB3_2026-06-03_augmentation_eliminados.txt
+
+============================================================
+📊 GENERANDO GRÁFICAS DE ENTRENAMIENTO
+============================================================
+✅ Gráfica de Accuracy guardada en: ./Estudios/Graficas/acc_fase1_modelo_efficientnetb3_augmentation_eliminados.png
+✅ Gráfica de Loss guardada en: ./Estudios/Graficas/loss_fase1_modelo_efficientnetb3_augmentation_eliminados.png
+✅ Gráfica de Accuracy guardada en: ./Estudios/Graficas/acc_fase2_modelo_efficientnetb3_augmentation_eliminados.png
+✅ Gráfica de Loss guardada en: ./Estudios/Graficas/loss_fase2_modelo_efficientnetb3_augmentation_eliminados.png
+
+✅ Todo completado.
+Job finalizado: Thu Jun  4 04:52:26 PM UTC 2026

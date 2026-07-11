@@ -22,9 +22,10 @@ import seaborn as sns
 # CONFIG
 # ==============================================================================
 
-ruta_test = "./Testing"
+ruta_test = "/remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Testing"
 
-ruta_modelo = "./Estudios/Modelo/mejor_modelo_efficientnetb3_principal_train_ft.keras"
+f_nombre = f"EfficientNetB3_elim_reachside_con_text"
+ruta_modelo = f"./Estudios/Modelo/mejor_modelo_{f_nombre}_train_ft.keras"
 ruta_output = "./Estudios"
 
 IMG_SIZE = 300
@@ -147,7 +148,7 @@ print("\nMatriz de confusión lista:", cm.shape)
 # Guardar matriz de confusión
 matriz_dir = os.path.join(ruta_output, "Matriz confusion")
 os.makedirs(matriz_dir, exist_ok=True)
-ruta_matriz = os.path.join(matriz_dir, f"matriz_confusion_{fecha}_efficientnetb3_comb_text.png")
+ruta_matriz = os.path.join(matriz_dir, f"matriz_confusion_{fecha}_{f_nombre}.png")
 plt.figure(figsize=(14, 11))
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
             xticklabels=class_names, yticklabels=class_names, cbar=True)
@@ -160,7 +161,7 @@ plt.close()
 print("PNG de matriz guardado en:", ruta_matriz)
 
 # Grafica accuracy por clase (barra)
-ruta_acc_clase = os.path.join(matriz_dir, f"accuracy_por_clase_{fecha}_efficientnetb3_comb_text.png")
+ruta_acc_clase = os.path.join(matriz_dir, f"accuracy_por_clase_{fecha}_{f_nombre}.png")
 graficar_accuracy_por_clase(cm, class_names, titulo="Accuracy por clase — EfficientNetB3", guardar=True, ruta_guardado=ruta_acc_clase)
 
 # ==============================================================================
@@ -182,7 +183,7 @@ os.makedirs(os.path.join(ruta_output, "Evaluacion"), exist_ok=True)
 ruta_txt = os.path.join(
     ruta_output,
     "Evaluacion",
-    f"evaluacion2_efficientnetb3_{fecha}.txt"
+    f"evaluacion_{f_nombre}_{fecha}.txt"
 )
 
 with open(ruta_txt, "w", encoding="utf-8") as f:

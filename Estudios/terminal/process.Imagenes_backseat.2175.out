@@ -1,0 +1,16 @@
+🚀 Iniciando job: 2175
+📅 Fecha: Tue Apr 28 10:42:53 PM CEST 2026
+🖥️  Nodo: afrodita
+🎮 GPU: NVIDIA A40
+NVIDIA A40
+
+🖥️  Dispositivo: CPU
+
+📥 Cargando InstructPix2Pix (~3GB primera vez)...
+✅ Modelo cargado
+
+
+📁 Clase: reach_backseat
+   Imágenes de referencia : 13390
+   Variaciones por imagen : 5
+   Total a generar        : 66950

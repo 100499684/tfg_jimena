@@ -1,0 +1,29 @@
+{
+  "fecha": "20260606_092108",
+  "modelo": "EfficientNetB3",
+  "image_size": [
+    300,
+    300
+  ],
+  "batch_size": 64,
+  "epochs_fase1": 6,
+  "epochs_fase2": 4,
+  "tiempo_fase1_min": 948.4423193176588,
+  "tiempo_fase2_min": 370.01427411238353,
+  "best_val_acc_fase1": 0.06514977663755417,
+  "best_val_acc_fase2": 0.06514977663755417,
+  "test_accuracy": 0.03805754333734512,
+  "test_loss": 2.835752010345459,
+  "confianza_media": 0.13086599111557007,
+  "classes": [
+    "safe_drive",
+    "phonecall",
+    "hair_and_makeup",
+    "texting",
+    "drinking",
+    "reach_side",
+    "radio",
+    "talking_to_passenger",
+    "reach_backseat"
+  ]
+}

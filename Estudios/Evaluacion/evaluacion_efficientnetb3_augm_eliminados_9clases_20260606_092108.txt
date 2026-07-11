@@ -1,0 +1,21 @@
+EVALUACION EfficientNetB3
+==================================================
+
+Loss: 2.8358
+Accuracy: 0.0381
+
+                      precision    recall  f1-score   support
+
+          safe_drive       0.00      0.00      0.00    421888
+           phonecall       0.00      0.00      0.00    284174
+     hair_and_makeup       0.00      0.00      0.00     47278
+             texting       0.00      0.00      0.00     56863
+            drinking       0.04      1.00      0.07     36866
+          reach_side       0.00      0.00      0.00     63110
+               radio       0.00      0.00      0.00     25552
+talking_to_passenger       0.00      0.00      0.00     22350
+      reach_backseat       0.00      0.00      0.00     10610
+
+            accuracy                           0.04    968691
+           macro avg       0.00      0.11      0.01    968691
+        weighted avg       0.00      0.04      0.00    968691

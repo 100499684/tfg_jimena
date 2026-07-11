@@ -1,0 +1,27 @@
+🚀 Iniciando job: 2241
+📅 Fecha: Tue May  5 10:34:40 PM CEST 2026
+🖥️  Nodo: afrodita
+🎮 GPU: NVIDIA A40
+NVIDIA A40
+Distribución de clases:
+  drinking: 51408 imágenes
+  hair_and_makeup: 67916 imágenes
+  phonecall: 350710 imágenes
+  radio: 31736 imágenes
+  reach_backseat: 13390 imágenes
+  reach_side: 83919 imágenes
+  safe_drive: 540526 imágenes
+  talking_to_passenger: 18176 imágenes
+  texting: 69008 imágenes
+
+Factores sugeridos para equilibrar:
+  drinking: factor 11
+  hair_and_makeup: factor 8
+  phonecall: factor 2
+  radio: factor 17
+  reach_backseat: factor 40
+  reach_side: factor 6
+  safe_drive: factor 1
+  talking_to_passenger: factor 30
+  texting: factor 8
+Job finalizado: Tue May  5 10:34:42 PM CEST 2026

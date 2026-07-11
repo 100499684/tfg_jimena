@@ -1,0 +1,13 @@
+🚀 Iniciando job: 2459
+📅 Fecha: Mon Jun  1 09:30:52 AM CEST 2026
+🖥️  Nodo: afrodita
+🎮 GPU: NVIDIA A40
+NVIDIA A40
+GPUs disponibles: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Found 1088664 files belonging to 12 classes.
+
+Clases detectadas (12): ['change_gear', 'drinking', 'hair_and_makeup', 'phonecall_left', 'phonecall_right', 'radio', 'reach_backseat', 'reach_side', 'safe_drive', 'talking_to_passenger', 'texting_left', 'texting_right']
+
+Cargando modelo: ./Estudios/Modelo/mejor_modelo_efficientnetb3_principal_train_ft.keras
+⚠️  Incompatibilidad de versión detectada, aplicando parche de Dense...
+Job finalizado: Mon Jun  1 09:31:25 AM CEST 2026

@@ -1,9 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name=debug_gpu
-#SBATCH --output=debug_gpu.out
-#SBATCH --error=debug_gpu.err
+#SBATCH --output=prueba1.out
+#SBATCH --error=prueba1.err
 #SBATCH --gres=gpu:1
-#SBATCH --partition=gpu-a40
 
 echo "HOSTNAME:"
 hostname
@@ -25,14 +24,11 @@ echo "CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
 echo
 echo "TENSORFLOW:"
 python - << 'EOF'
-import tensorflow as tf
+import os
+from collections import Counter
 
-print("TF version:", tf.__version__)
-print("GPUs:", tf.config.list_physical_devices('GPU'))
-
-for gpu in tf.config.list_physical_devices('GPU'):
-    try:
-        print(tf.config.experimental.get_device_details(gpu))
-    except Exception as e:
-        print(e)
+train_path = "./Training"
+clases = os.listdir(train_path)
+counts = {cls: len(os.listdir(os.path.join(train_path, cls))) for cls in clases}
+print(counts)
 EOF

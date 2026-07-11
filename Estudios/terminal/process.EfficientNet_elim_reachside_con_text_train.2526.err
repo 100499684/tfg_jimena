@@ -89,3 +89,15 @@ Trying algorithm eng4{} for conv (f32[16,96,1,1]{3,2,1,0}, u8[0]{0}) custom-call
 2026-06-05 00:38:32.224669: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
 2026-06-05 01:17:23.300989: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1175 of 2000
 2026-06-05 01:17:30.434871: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-05 01:56:37.035251: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1145 of 2000
+2026-06-05 01:56:44.987650: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-05 02:35:58.412670: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1165 of 2000
+2026-06-05 02:36:05.497691: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-05 03:15:18.387646: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1184 of 2000
+2026-06-05 03:15:25.329403: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2026-06-05 03:54:29.165832: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:8: Filling up shuffle buffer (this may take a while): 1179 of 2000
+2026-06-05 03:54:36.281107: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+/home/jcabrera@caos.uc3m.es/tfg-jimena/Codigo_graficas/graficas.py:82: UserWarning: Glyph 10024 (\N{SPARKLES}) missing from font(s) DejaVu Sans.
+  plt.savefig(ruta_guardado, dpi=300, bbox_inches='tight')
+/home/jcabrera@caos.uc3m.es/tfg-jimena/Codigo_graficas/graficas.py:164: UserWarning: Glyph 10024 (\N{SPARKLES}) missing from font(s) DejaVu Sans.
+  plt.savefig(ruta_guardado, dpi=300, bbox_inches='tight')

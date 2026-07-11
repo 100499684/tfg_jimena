@@ -1,0 +1,42 @@
+🚀 Iniciando job: 1826
+📅 Fecha: Tue Apr 14 11:38:25 PM CEST 2026
+🖥️  Nodo: afrodita
+🎮 GPU: NVIDIA A40
+NVIDIA A40
+GPUs disponibles: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Configuración lista
+Found 1310708 files belonging to 9 classes.
+Using 1179638 files for training.
+Found 1310708 files belonging to 9 classes.
+Using 131070 files for validation.
+
+📋 Clases: ['drinking', 'hair_and_makeup', 'phonecall', 'radio', 'reach_backseat', 'reach_side', 'safe_drive', 'talking_to_passenger', 'texting']
+Total clases: 9
+
+📊 Calculando pesos de clase...
+Distribución original:
+  drinking                 :  46276 muestras
+  hair_and_makeup          :  60959 muestras
+  phonecall                : 315911 muestras
+  radio                    :  28642 muestras
+  reach_backseat           :  12018 muestras
+  reach_side               : 150919 muestras
+  safe_drive               : 486347 muestras
+  talking_to_passenger     :  16361 muestras
+  texting                  :  62205 muestras
+
+Pesos asignados (mayor peso = clase más importante):
+  drinking                 : 2.8324
+  hair_and_makeup          : 2.1501
+  phonecall                : 0.4149
+  radio                    : 4.5762
+  reach_backseat           : 10.9062
+  reach_side               : 0.8685
+  safe_drive               : 0.2695
+  talking_to_passenger     : 8.0112
+  texting                  : 2.1071
+
+🔧 Configurando Data Augmentation...
+Clases con augmentation especial: ['texting', 'talking_to_passenger', 'radio', 'reach_backseat']
+🚀 Optimizando pipeline de datos...
+Job finalizado: Tue Apr 14 11:49:30 PM CEST 2026

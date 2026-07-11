@@ -1,0 +1,14 @@
+🚀 Iniciando job: 1861
+📅 Fecha: Thu Apr 16 10:41:47 AM CEST 2026
+🖥️  Nodo: afrodita
+🎮 GPU: NVIDIA A40
+NVIDIA A40
+GPUs disponibles: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Configuración lista
+Found 1310708 files belonging to 9 classes.
+Using 1179638 files for training.
+Found 1310708 files belonging to 9 classes.
+Using 131070 files for validation.
+
+Datasets listos 🚀
+Job finalizado: Thu Apr 16 10:43:26 AM CEST 2026
