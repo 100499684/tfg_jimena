@@ -32,3 +32,5 @@ __pycache__/
 
 *.out
 
+
+process.EfficientNet_augm_new_train.txt
