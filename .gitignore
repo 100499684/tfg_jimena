@@ -3,6 +3,8 @@ Training/
 Testing/
 Training_sinteticas/
 imagenes_sinteticas_*/
+Imagenes_IA/*
+fast/*
 
 # caches
 *.data-00000-of-00001
@@ -29,7 +31,7 @@ __pycache__/
 
 # misc
 *.err
-
+*.txt
 *.out
 
 
