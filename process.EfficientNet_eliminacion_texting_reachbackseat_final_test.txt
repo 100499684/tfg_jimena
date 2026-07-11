@@ -1,0 +1,81 @@
+2026-06-14 17:50:14.367322: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 17:50:14.397125: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+GPUs: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Found 963393 files belonging to 9 classes.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1781452223.679940 3821962 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6158 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 4060, pci bus id: 0000:01:00.0, compute capability: 8.9
+2026-06-14 17:50:26.884125: I external/local_xla/xla/service/service.cc:163] XLA service 0x7d5938013d10 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2026-06-14 17:50:26.884140: I external/local_xla/xla/service/service.cc:171]   StreamExecutor device (0): NVIDIA GeForce RTX 4060, Compute Capability 8.9
+2026-06-14 17:50:27.051111: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2026-06-14 17:50:27.480794: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 91700
+2026-06-14 17:50:28.466514: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 17:50:28.555177: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 17:50:30.882129: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 17:50:30.975445: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 17:50:32.236137: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 17:50:32.317491: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 17:50:32.688596: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 17:50:32.771326: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 17:50:33.147714: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 17:50:33.230640: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 17:50:33.655098: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 17:50:33.747628: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+I0000 00:00:1781452235.553385 3822095 device_compiler.h:196] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2026-06-14 18:25:12.459824: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 18:25:12.537152: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 18:25:12.833120: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 18:25:12.913364: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 18:25:13.272431: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 18:25:13.352738: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 18:25:13.720381: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-06-14 18:25:13.807056: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+
+Clases: ['drinking', 'hair_and_makeup', 'phonecall', 'radio', 'reach_backseat', 'reach_side', 'safe_drive', 'talking_to_passenger', 'texting']
+
+Reconstruyendo modelo...
+Cargando pesos desde el .keras...
+Modelo cargado correctamente
+
+===================================
+EVALUACIÓN GLOBAL
+===================================
+60213/60213 - 2091s - 35ms/step - accuracy: 0.8147 - loss: 0.6804
+
+LOSS: 0.6803608536720276
+ACCURACY: 0.8147412538528442
+
+Calculando predicciones...
+60213/60213 - 2083s - 35ms/step
+2026-06-14 19:02:13.077585: I tensorflow/core/framework/local_rendezvous.cc:407] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+
+CLASSIFICATION REPORT:
+                      precision    recall  f1-score   support
+
+            drinking       0.47      0.95      0.62     36868
+     hair_and_makeup       0.68      0.86      0.76     47278
+           phonecall       0.95      0.91      0.93    284174
+               radio       0.59      0.64      0.61     25552
+      reach_backseat       0.64      0.46      0.54      5310
+          reach_side       0.58      0.87      0.70     63110
+          safe_drive       0.93      0.77      0.84    421888
+talking_to_passenger       0.45      0.71      0.55     22350
+             texting       0.86      0.67      0.75     56863
+
+            accuracy                           0.81    963393
+           macro avg       0.68      0.76      0.70    963393
+        weighted avg       0.85      0.81      0.82    963393
+
+
+Matriz de confusión lista: (9, 9)
+PNG de matriz guardado en: ./Estudios/Matriz confusion/matriz_confusion_efficientnetb3_eliminacion_texting_reachbackseat_final_test_2026-06-14.png
+✅ Gráfica guardada en: ./Estudios/Matriz confusion/accuracy_por_clase_efficientnetb3_eliminacion_texting_reachbackseat_final_test_2026-06-14.png
+PNG de accuracy por clase guardado en: ./Estudios/Matriz confusion/accuracy_por_clase_efficientnetb3_eliminacion_texting_reachbackseat_final_test_2026-06-14.png
+
+Confianza media: 0.89894086
+Confianza min: 0.20180613
+Confianza max: 1.0
+
+TXT guardado en: ./Estudios/Evaluacion/evaluacion_efficientnetb3_eliminacion_texting_reachbackseat_final_test_2026-06-14.txt
+
+EVALUACIÓN COMPLETADA

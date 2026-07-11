@@ -1,0 +1,50 @@
+EVALUACION modelo_aug_final
+==================================================
+
+Modelo: ./Estudios/Modelos/modelo_aug_final.h5
+Test: ./Testing
+Loss: 0.6839583516120911
+Accuracy: 0.77246794681155
+
+Clases:
+0: safe_drive
+1: phonecall
+2: hair_and_makeup
+3: texting
+4: drinking
+5: reach_side
+6: radio
+7: talking_to_passenger
+8: reach_backseat
+
+Classification report:
+                      precision    recall  f1-score   support
+
+          safe_drive       0.84      0.75      0.79    421888
+           phonecall       0.98      0.88      0.93    284174
+     hair_and_makeup       0.68      0.82      0.75     47278
+             texting       0.61      0.55      0.58    113726
+            drinking       0.53      0.95      0.68     36868
+          reach_side       0.58      0.81      0.67     63110
+               radio       0.45      0.70      0.55     25552
+talking_to_passenger       0.46      0.63      0.53     22350
+      reach_backseat       0.62      0.57      0.60     10615
+
+            accuracy                           0.77   1025561
+           macro avg       0.64      0.74      0.68   1025561
+        weighted avg       0.80      0.77      0.78   1025561
+
+Accuracy por clase:
+safe_drive: 0.7523
+phonecall: 0.8770
+hair_and_makeup: 0.8240
+texting: 0.5510
+drinking: 0.9452
+reach_side: 0.8103
+radio: 0.6987
+talking_to_passenger: 0.6292
+reach_backseat: 0.5717
+
+Confianza media: 0.8202527761459351
+Confianza min: 0.19579154253005981
+Confianza max: 1.0

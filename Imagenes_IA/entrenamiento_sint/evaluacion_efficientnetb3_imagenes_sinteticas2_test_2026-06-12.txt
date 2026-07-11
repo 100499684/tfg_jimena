@@ -1,0 +1,34 @@
+EVALUACION EfficientNetB3
+==================================================
+
+Modelo: ./Estudios/Modelo/mejor_modelo_efficientnetb3_imagenes_sinteticas2_train_ft.keras
+Test: /remote-repositorio/afrodita/repo-fast/tfg_jcabrera/Testing
+Loss: 0.839554488658905
+Accuracy: 0.7716600298881531
+
+Clases:
+0: drinking
+1: hair_and_makeup
+2: phonecall
+3: radio
+4: reach_backseat
+5: reach_side
+6: safe_drive
+7: talking_to_passenger
+8: texting
+
+                      precision    recall  f1-score   support
+
+            drinking       0.50      0.94      0.65     36866
+     hair_and_makeup       0.76      0.84      0.80     47278
+           phonecall       0.95      0.92      0.94    284174
+               radio       0.54      0.65      0.59     25552
+      reach_backseat       0.72      0.62      0.67     10610
+          reach_side       0.60      0.86      0.71     63110
+          safe_drive       0.87      0.68      0.77    421888
+talking_to_passenger       0.42      0.76      0.54     22350
+             texting       0.56      0.64      0.60    113726
+
+            accuracy                           0.77   1025554
+           macro avg       0.66      0.77      0.70   1025554
+        weighted avg       0.81      0.77      0.78   1025554

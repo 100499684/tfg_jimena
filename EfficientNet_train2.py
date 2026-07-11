@@ -5,7 +5,7 @@ os.environ["TF_FORCE_GPU_ALLOW_GROWTH"] = "true"
 import tensorflow as tf
 from tensorflow.keras.applications import EfficientNetB3
 from tensorflow.keras.applications.efficientnet import preprocess_input
-from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout, Lambda
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
 from tensorflow.keras.models import Model
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
 from tensorflow.keras import mixed_precision
@@ -34,11 +34,11 @@ for gpu in gpus:
 # XLA JIT compilation
 #tf.config.optimizer.set_jit(True)
 
-ruta_train  = "remote-repositorio/afrodita/repo-fast/tfg_jcabrera/Training"
-ruta_test   = "remote-repositorio/afrodita/repo-fast/tfg_jcabrera/Testing"
+ruta_train  = "../../../remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Training"
+ruta_test   = "../../../remote-repositorio/afrodita/repo-ultra/tfg_jcabrera/Testing"
 ruta_output = "./Estudios"
-nombre_archivo = "modelo_efficientnetb3_imagenes_sinteticas_train"
-f_name = f"EfficientNetB3_{datetime.date.today()}_imagenes_sinteticas.txt"
+nombre_archivo = "modelo_efficientnetb3_eliminacion_reachbackseat_texting_final_train"
+f_name = f"EfficientNetB3_{datetime.date.today()}_eliminacion_reachbackseat_texting_final_train.txt"
 
 IMG_SIZE    = 300
 BATCH_SIZE  = 16
@@ -114,9 +114,6 @@ x = Dropout(0.3)(x)
 x = Dense(128, activation='relu')(x)
 x = Dropout(0.2)(x)
 
-# Cast explícito a float32 ANTES de la capa final para evitar conflictos mixed_float16
-x = Lambda(lambda t: tf.cast(t, tf.float32))(x)
-
 predictions = Dense(NUM_CLASSES, activation='softmax', dtype='float32')(x)
 
 model = Model(inputs=base_model.input, outputs=predictions)
@@ -154,20 +151,20 @@ callbacks = [
         monitor='val_accuracy',
         save_best_only=True,
         mode='max',
-        verbose=1
+        verbose=2
     ),
     EarlyStopping(
         monitor='val_accuracy',
         patience=5,
         restore_best_weights=True,
-        verbose=1
+        verbose=2
     ),
     ReduceLROnPlateau(
         monitor='val_loss',
         factor=0.2,
         patience=3,
         min_lr=1e-7,
-        verbose=1
+        verbose=2
     )
 ]
 
@@ -208,7 +205,7 @@ for layer in base_model.layers[:-30]:
 
 # Recompilar con LR muy bajo para fine-tuning
 model.compile(
-    optimizer=tf.keras.optimizers.Adam(learning_rate=5e-4),
+    optimizer=tf.keras.optimizers.Adam(learning_rate=1e-5),
     loss='sparse_categorical_crossentropy',
     metrics=['accuracy']
 )
@@ -222,20 +219,20 @@ callbacks_ft = [
         monitor='val_accuracy',
         save_best_only=True,
         mode='max',
-        verbose=1
+        verbose=2
     ),
     EarlyStopping(
         monitor='val_accuracy',
         patience=4,
         restore_best_weights=True,
-        verbose=1
+        verbose=2
     ),
     ReduceLROnPlateau(
         monitor='val_loss',
         factor=0.2,
         patience=2,
         min_lr=1e-8,
-        verbose=1
+        verbose=2
     )
 ]
 

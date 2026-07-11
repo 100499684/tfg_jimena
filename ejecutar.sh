@@ -5,9 +5,9 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --mail-type=END
 #SBATCH --mail-user=100499684@alumnos.uc3m.es
-#SBATCH --job-name=augm_sin2
-#SBATCH --output=Estudios/terminal/process.EfficientNetB3_sintetico_train.%j.out
-#SBATCH --error=Estudios/terminal/process.EfficientNetB3_sintetico_train.%j.err
+#SBATCH --job-name=tr_sin3
+#SBATCH --output=Estudios/terminal/process.EfficientNetB3_sint2_train.%j.out
+#SBATCH --error=Estudios/terminal/process.EfficientNetB3_sint2_train.%j.err
 #SBATCH --gres=gpu:1
 #SBATCH --partition=gpu-a40
 source ~/.bashrc
