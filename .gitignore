@@ -29,8 +29,7 @@ __pycache__/
 
 # misc
 *.err
-EOF
 
-.envEstudios/terminal/process.EfficientNetB3_augm_eliminados_9clases_completo2.2578.out
-Estudios/terminal/process.EfficientNet_aug_9clases_train.2544.out
-Estudios/terminal/process.EfficientNet_augm_eliminados3_train.2532.out
+*.out
+backups/
+
